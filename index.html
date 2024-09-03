@@ -1,68 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>About Me</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <h1>Damian Tomczyszyn</h1>
+            <ul class="nav-links">
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#more">More About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-			<!-- Custom styles for this template go here -->
-				<link rel="stylesheet" href="css/styles.css">
+    <main class="container">
+        <section class="hero">
+            <img src="img/profile.jpg" alt="Profile Picture" class="profile-image">
+        </section>
 
-			<!--[if lt IE 9]>
-			<script src="dist/html5shiv.js"></script>
-			<![endif]-->			
-	</head>
-	<body>
-		<div class="container">
-			<div class="header">
-				<h1>About Me</h1>
-			</div><!-- end header-->
-			<div class="image">
-				<img src="img/profile.jfif">	
-			</div><!-- end image-->
-			<div class="intro column">
-				<h2>Introduction</h2>
-				<p>
-                   I am a 24-year-old Java developer with a strong scientific background and a Master’s degree in Computer Science. My passion for technology drives me to continuously expand my programming skills through hands-on projects and specialized online courses. I have a solid understanding of Java, and I'm constantly exploring new technologies to stay ahead in the ever-evolving tech landscape. I’m currently seeking a challenging role as a Java programmer where I can apply my knowledge, contribute to innovative solutions, and continue growing as a developer. My personal projects reflect my commitment to mastering the craft, including everything from building web applications to automating home systems. I’m excited to bring my enthusiasm, problem-solving skills, and technical expertise to a dynamic team.
-				</p>
-			</div><!-- end intro-->
-			<div class="skills column">
-				<h3>My Skills</h3>
-				<ul id="skill-list">
-					<li>Java</li>
-					<li>Python</li>						
-					<li>OOP</li>
-                    <li>Maven</li>
-                    <li>Spring Boot</li>
-                    <li>Relational databases</li>
-                    <li>Docker</li>
-                    <li>Git</li>
-				</ul><!--end skill-list-->
-			</div><!-- end skills-->
-			<div class="main-text">
-				<h3>More About Me</h3>
-				<p>
-                I am interested in both low and high level programming. I have written simple web applications, console applications and C code for AVR microcontrollers. 
-		I am interested in home automation and create many of my own projects using Arduino, ESP32, and Raspberry Pi.
-		Currently my biggest project is creating an automatic lawn mower robot that uses GPS. Completed projects include an ESP32 based weather station,
-		and an ESP8266 based watering using data from a weather station.
-                </p>
-				
-			</div><!-- end main-text-->
-        </div><!--end container-->
-            <div class="row">           
+        <section id="intro" class="intro">
+            <h2>Introduction</h2>
+            <p>
+				I am a 24-year-old Java developer with a strong scientific background and a Master’s degree in Computer Science.
+				 My passion for technology drives me to continuously expand my programming skills through hands-on projects and specialized online courses. 
+				 I have a solid understanding of Java, and I'm constantly exploring new technologies to stay ahead in the ever-evolving tech landscape. 
+				 I’m currently seeking a challenging role as a Java programmer where I can apply my knowledge, contribute to innovative solutions, 
+				 and continue growing as a developer. My personal projects reflect my commitment to mastering the craft, including everything from 
+				 building web applications to automating home systems. I’m excited to bring my enthusiasm, problem-solving skills, and technical expertise
+				  to a dynamic team.     
+			</p>
+        </section>
 
-            
-            <div class="column">
-                <a href="https://gitlab.com/damiantomczyszyn"><img src="img/gitlab.png" alt="HTML tutorial" style="width:10%" ></a>
-            </div>
-            <div class="column">
-                <a href="https://www.linkedin.com/in/tomczyszyn/"><img src="img/linkedin.png" alt="HTML tutorial" style="width:10%" ></a>
-            </div>
-            <div class="column">
-                <a href="https://github.com/damiantomczyszyn"><img src="img/github.png" alt="HTML tutorial" style="width: 10%" ></a>
-				
-			</div><!-- end main-text-->
+		<section id="skills" class="skills">
+			<h2>My Skills</h2>
+			<ul class="skill-list">
+				<li>
+					<span>Java</span>
+					<div class="progress-bar">
+						<div class="progress" style="width: 30%;"></div> <!-- Set width according to your skill level -->
+					</div>
+				</li>
+				<li>
+					<span>Python</span>
+					<div class="progress-bar">
+						<div class="progress" style="width: 40%;"></div>
+					</div>
+				</li>
+				<li>
+					<span>Spring Boot</span>
+					<div class="progress-bar">
+						<div class="progress" style="width: 30%;"></div>
+					</div>
+				</li>
+				<li>
+					<span>Relational Databases</span>
+					<div class="progress-bar">
+						<div class="progress" style="width: 50%;"></div>
+					</div>
+				</li>
+				<li>
+					<span>Docker</span>
+					<div class="progress-bar">
+						<div class="progress" style="width: 50%;"></div>
+					</div>
+				</li>
+				<li>
+					<span>Git</span>
+					<div class="progress-bar">
+						<div class="progress" style="width: 50%;"></div>
+					</div>
+				</li>
+			</ul>
+		</section>
 		
-	</body>
+
+        <section id="more" class="main-text">
+            <h2>More About Me</h2>
+            <p>
+                I am interested in both low and high level programming. I have written simple web applications, console applications and C code for 
+				AVR microcontrollers. I am interested in home automation and create many of my own projects using Arduino, ESP32, and Raspberry Pi.
+				 Currently my biggest project is creating an automatic lawn mower robot that uses GPS. Completed projects include an ESP32 based weather 
+				 station, and an ESP8266 based watering using data from a weather station.
+			</p>
+        </section>
+
+        <section id="contact" class="social-links">
+            <h2>Connect with Me</h2>
+            <div class="icons">
+                <a href="https://gitlab.com/damiantomczyszyn" target="_blank">
+                    <img src="img/gitlab.png" alt="GitLab" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/tomczyszyn/" target="_blank">
+                    <img src="img/linkedin.png" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://github.com/damiantomczyszyn" target="_blank">
+                    <img src="img/github.png" alt="GitHub" class="social-icon">
+                </a>
+            </div>
+        </section>
+    </main>
+
+<section id="contact-info" class="contact-info">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out to me via phone:</p>
+    <p class="phone-number">📞 +48 730 775 485</p> 
+	<p class="email-address">📧 <a href="mailto:Damian.Tomczyszyn@outlook.my">Damian.Tomczyszyn@outlook.my</a></p> 
+
+</section>
+
+<footer class="footer">
+    <p>&copy; 2024 Damian Tomczyszyn. All rights reserved.</p>
+</footer>
+</body>
 </html>

@@ -1,28 +1,210 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
-    background-color: powderblue;
-    margin: auto;
-  }
-  h1 {
-    color: blue;
-  }
-  p {
-    color: green;
-  }
-  h2 {
-    color: darkgoldenrod;
-  }
-  h3 {
-    color: darkcyan;
-  }
-  .column {
-    float: left;    
-    width: 33.33%;
-    padding: 5px;    
-  }
-  
-  /* Clear floats after image containers */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header and Navigation */
+.header {
+  background: #333;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  color: #f0a500;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-image {
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid #f0a500;
+}
+
+/* Main Sections */
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.intro, .skills, .main-text, .social-links {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #f0a500;
+  margin-bottom: 1rem;
+}
+
+/* Skill list styles */
+.skill-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-list li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.skill-list span {
+  flex: 1;
+  font-weight: bold;
+}
+
+/* Progress bar container */
+.progress-bar {
+  flex: 3;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 10px;
+  height: 15px;
+  position: relative;
+}
+
+/* Progress bar fill */
+.progress {
+  background: #f0a500;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  transition: width 0.4s ease;
+}
+/* Social Icons */
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  width: 40px;
+  transition: transform 0.2s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+  background-attachment: fixed; /* This keeps the background fixed while scrolling */
+}
+
+/* Add a subtle pattern overlay to the gradient */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/white-diamond.png'); /* Subtle pattern */
+  opacity: 0.2; /* Adjust this value for more or less visibility */
+  pointer-events: none; /* Ensures this layer doesn't interfere with page interactions */
+  z-index: -1;
+}
+
+/* Section containers with background effect */
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.85); /* Slightly transparent background for content sections */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Text and other element styles remain as they were */
+.intro, .skills, .main-text, .social-links {
+  margin-bottom: 2rem;
+}
+
+/* Update navigation and other styles accordingly */
+.navbar h1 {
+  color: #fff;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  color: #f0a500;
+}
+/* Contact Info Section */
+
+.contact-info {
+  padding: 1rem 2rem;
+  margin: 2rem auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85); /* Slightly transparent to match design */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info p {
+  color: #555;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.phone-number {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2b5876; /* Styled to stand out */
+}
