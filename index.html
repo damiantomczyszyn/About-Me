@@ -3,145 +3,170 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About Me</title>
+    <meta name="description" content="Damian Tomczyszyn – Junior Java Developer with a Master's degree in Computer Science. Passionate about backend development, IoT, and home automation.">
+    <title>Damian Tomczyszyn – Java Developer</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
-            <h1>Damian Tomczyszyn</h1>
+            <span class="nav-brand">Damian Tomczyszyn</span>
             <ul class="nav-links">
-                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#intro">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#more">More About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="container">
+
         <section class="hero">
-            <img src="img/profile.jpg" alt="Profile Picture" class="profile-image">
+            <img src="img/profile.jpg" alt="Damian Tomczyszyn" class="profile-image">
+            <div class="hero-text">
+                <h1>Damian Tomczyszyn</h1>
+                <p class="hero-subtitle">Junior Java Developer &nbsp;·&nbsp; M.Sc. Computer Science</p>
+                <div class="hero-actions">
+                    <a href="docs/Damian-java-cv.pdf" target="_blank" class="btn btn-primary">Download CV</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
         </section>
 
-        <section id="intro" class="intro">
-            <h2>Introduction</h2>
+        <section id="intro" class="section">
+            <h2>About Me</h2>
             <p>
-				I am a 24-year-old Java developer with a strong scientific background and a Master’s degree in Computer Science.
-				 My passion for technology drives me to continuously expand my programming skills through hands-on projects and specialized online courses. 
-				 I have a solid understanding of Java, and I'm constantly exploring new technologies to stay ahead in the ever-evolving tech landscape. 
-				 I’m currently seeking a challenging role as a Java programmer where I can apply my knowledge, contribute to innovative solutions, 
-				 and continue growing as a developer. My personal projects reflect my commitment to mastering the craft, including everything from 
-				 building web applications to automating home systems. I’m excited to bring my enthusiasm, problem-solving skills, and technical expertise
-				  to a dynamic team.     
-			</p>
-        </section>
-
-		<section id="skills" class="skills">
-			<h2>My Skills</h2>
-			<ul class="skill-list">
-				<li>
-					<span>Java & Spring Boot</span>
-					<div class="progress-bar">
-						<div class="progress" style="width: 35%;"></div> <!-- Set width according to your skill level -->
-					</div>
-				</li>
-				<li>
-					<span>Python & Django</span>
-					<div class="progress-bar">
-						<div class="progress" style="width: 30%;"></div>
-					</div>
-				</li>
-				<li>
-					<span>Relational Databases</span>
-					<div class="progress-bar">
-						<div class="progress" style="width: 30%;"></div>
-					</div>
-				</li>
-				<li>
-					<span>Linux & Windows</span>
-					<div class="progress-bar">
-						<div class="progress" style="width: 50%;"></div>
-					</div>
-				</li>
-				<li>
-					<span>Docker</span>
-					<div class="progress-bar">
-						<div class="progress" style="width: 30%;"></div>
-					</div>
-				</li>
-				<li>
-					<span>Git</span>
-					<div class="progress-bar">
-						<div class="progress" style="width: 30%;"></div>
-					</div>
-				</li>
-				<li>
-					<span>C & C++</span>
-					<div class="progress-bar">
-						<div class="progress" style="width: 30%;"></div>
-					</div>
-				</li>
-				<li>
-					<span>C# & .NET</span>
-					<div class="progress-bar">
-						<div class="progress" style="width: 25%;"></div>
-					</div>
-				</li>
-				<li>
-					<span>Arduino Framework & AVR</span>
-					<div class="progress-bar">
-						<div class="progress" style="width: 50%;"></div>
-					</div>
-				</li>
-			</ul>
-		</section>
-		
-
-        <section id="more" class="main-text">
-            <h2>More About Me</h2>
+                I am a 24-year-old Java developer with a Master's degree in Computer Science. My passion for technology drives me to continuously expand my skills through hands-on projects and specialized online courses. I have a solid foundation in Java and Spring Boot, and I am constantly exploring new technologies to stay ahead in the ever-evolving tech landscape.
+            </p>
             <p>
-                I am interested in both low and high level programming. I have written simple web applications, console applications and C code for 
-				AVR microcontrollers. I am interested in home automation and create many of my own projects using Arduino, ESP32, and Raspberry Pi.
-				 Currently my biggest project is creating an automatic lawn mower robot that uses GPS. Completed projects include an ESP32 based weather 
-				 station, and an ESP8266 based watering using data from a weather station.
-			</p>
+                I am currently seeking a challenging role as a Java programmer where I can apply my knowledge, contribute to innovative solutions, and continue growing as a developer. My personal projects reflect my commitment to mastering the craft — from building backend web applications to automating home systems with IoT devices.
+            </p>
         </section>
 
-        <section id="contact" class="social-links">
-            <h2>Connect with Me</h2>
-            <div class="icons">
-                <a href="https://gitlab.com/damiantomczyszyn" target="_blank">
-                    <img src="img/gitlab.png" alt="GitLab" class="social-icon">
-                </a>
-                <a href="https://www.linkedin.com/in/tomczyszyn/" target="_blank">
-                    <img src="img/linkedin.png" alt="LinkedIn" class="social-icon">
-                </a>
-                <a href="https://github.com/damiantomczyszyn" target="_blank">
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="tag tag-primary">Java</span>
+                        <span class="tag tag-primary">Spring Boot</span>
+                        <span class="tag">Spring MVC</span>
+                        <span class="tag">Hibernate</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">C# / .NET</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps &amp; Tools</h3>
+                    <div class="skill-tags">
+                        <span class="tag tag-primary">Git</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">Windows</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Embedded &amp; IoT</h3>
+                    <div class="skill-tags">
+                        <span class="tag tag-primary">Arduino</span>
+                        <span class="tag tag-primary">AVR / C</span>
+                        <span class="tag">ESP32</span>
+                        <span class="tag">ESP8266</span>
+                        <span class="tag">Raspberry Pi</span>
+                        <span class="tag">C / C++</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>GPS Autonomous Lawn Mower</h3>
+                        <span class="project-status in-progress">In Progress</span>
+                    </div>
+                    <p>Autonomous lawn mower robot using GPS for navigation. Combines embedded systems, motor control, and GPS module integration.</p>
+                    <div class="project-tags">
+                        <span class="tag">Arduino</span>
+                        <span class="tag">GPS</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">Embedded</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>ESP32 Weather Station</h3>
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <p>IoT weather station based on ESP32 that collects temperature, humidity, and pressure data and serves it over Wi-Fi.</p>
+                    <div class="project-tags">
+                        <span class="tag">ESP32</span>
+                        <span class="tag">IoT</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">Arduino</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Smart Watering System</h3>
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <p>Automated plant watering system on ESP8266 that integrates with weather station data to make smart irrigation decisions.</p>
+                    <div class="project-tags">
+                        <span class="tag">ESP8266</span>
+                        <span class="tag">IoT</span>
+                        <span class="tag">Home Automation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <span class="contact-label">Email</span>
+                    <a href="mailto:Damian.Tomczyszyn@outlook.my" class="contact-value">Damian.Tomczyszyn@outlook.my</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">+48 730 775 485</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/damiantomczyszyn" target="_blank" class="social-link" title="GitHub">
                     <img src="img/github.png" alt="GitHub" class="social-icon">
+                    <span>GitHub</span>
                 </a>
-				<a href="https://www.facebook.com/damian.tomczyszyn.77" target="_blank">
-                    <img src="img/facebook.png" alt="GitHub" class="social-icon">
+                <a href="https://gitlab.com/damiantomczyszyn" target="_blank" class="social-link" title="GitLab">
+                    <img src="img/gitlab.png" alt="GitLab" class="social-icon">
+                    <span>GitLab</span>
+                </a>
+                <a href="https://www.linkedin.com/in/tomczyszyn/" target="_blank" class="social-link" title="LinkedIn">
+                    <img src="img/linkedin.png" alt="LinkedIn" class="social-icon">
+                    <span>LinkedIn</span>
                 </a>
             </div>
         </section>
+
     </main>
-	
-<section id="contact-info" class="contact-info">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out to me via phone:</p>
-    <p class="phone-number">📞 +48 730 775 485</p> 
-	<p class="email-address">📧 <a href="mailto:Damian.Tomczyszyn@outlook.my">Damian.Tomczyszyn@outlook.my</a></p> 
-	<a href="docs/Damian-java-cv.pdf" target="_blank" title="View my CV">
-		<img src="img/cv-icon.png" alt="CV Icon" class="social-icon">
-	</a>
 
-
-</section>
-
-<footer class="footer">
-    <p>&copy; 2024 Damian Tomczyszyn. All rights reserved.</p>
-</footer>
+    <footer class="footer">
+        <p>&copy; 2025 Damian Tomczyszyn. All rights reserved.</p>
+    </footer>
 </body>
 </html>
