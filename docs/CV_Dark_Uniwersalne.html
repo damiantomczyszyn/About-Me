@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>CV - Damian Tomczyszyn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --surface-color: #1e293b;
+            --primary-color: #38bdf8;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            /* A4 size for printing */
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .cv-container {
+            display: flex;
+            min-height: 297mm;
+        }
+        .left-column {
+            width: 33%;
+            background-color: var(--surface-color);
+            padding: 40px 25px;
+            box-sizing: border-box;
+            border-right: 2px solid #334155;
+        }
+        .right-column {
+            width: 67%;
+            padding: 40px 35px;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 26px;
+            margin: 0 0 5px 0;
+            color: var(--text-primary);
+            line-height: 1.2;
+        }
+        h2.subtitle {
+            font-size: 13px;
+            color: var(--primary-color);
+            font-weight: 500;
+            margin: 0 0 30px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h3 {
+            font-size: 15px;
+            color: var(--primary-color);
+            border-bottom: 2px solid #334155;
+            padding-bottom: 5px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .contact-info {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px 0;
+            font-size: 11px;
+            color: var(--text-secondary);
+        }
+        .contact-info li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .contact-info i {
+            color: var(--primary-color);
+            width: 15px;
+            text-align: center;
+        }
+        .skills-section {
+            margin-bottom: 30px;
+        }
+        .skills-group {
+            margin-bottom: 15px;
+        }
+        .skills-group h4 {
+            font-size: 12px;
+            color: var(--text-primary);
+            margin: 0 0 6px 0;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .tag {
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--primary-color);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 10.5px;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+        .section-right {
+            margin-bottom: 25px;
+        }
+        .profile-text {
+            font-size: 12px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+        .job {
+            margin-bottom: 20px;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+        .job-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        .job-date {
+            font-size: 11px;
+            color: var(--primary-color);
+        }
+        .job-company {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            font-style: italic;
+        }
+        .job-tasks {
+            margin: 0;
+            padding-left: 15px;
+            font-size: 11.5px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .job-tasks li {
+            margin-bottom: 5px;
+            text-align: justify;
+        }
+        .rodo {
+            font-size: 8.5px;
+            color: #475569;
+            margin-top: 35px;
+            text-align: justify;
+            line-height: 1.4;
+        }
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                width: 100%;
+                height: 100%;
+            }
+            @page {
+                size: A4;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Lewa kolumna -->
+        <div class="left-column">
+            <h1>Damian<br>Tomczyszyn</h1>
+            <h2 class="subtitle">Fullstack Dev & CyberSec</h2>
+            
+            <h3>Kontakt</h3>
+            <ul class="contact-info">
+                <li><i class="fa-solid fa-phone"></i> +48 730 775 485</li>
+                <li><i class="fa-solid fa-envelope"></i> Damian.Tomczyszyn@outlook.my</li>
+                <li><i class="fa-solid fa-location-dot"></i> Warszawa, Polska</li>
+                <li><i class="fa-brands fa-linkedin"></i> linkedin.com/in/tomczyszyn/</li>
+                <li><i class="fa-brands fa-github"></i> github.com/damiantomczyszyn</li>
+            </ul>
+
+            <div class="skills-section">
+                <h3>Umiejętności</h3>
+                
+                <div class="skills-group">
+                    <h4>Programowanie & Fullstack</h4>
+                    <div class="tags">
+                        <span class="tag">C# & .NET</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Razor</span>
+                        <span class="tag">Bash</span>
+                    </div>
+                </div>
+
+                <div class="skills-group">
+                    <h4>Infrastruktura & Wirtualizacja</h4>
+                    <div class="tags">
+                        <span class="tag">Linux (RedHat)</span>
+                        <span class="tag">Windows Server</span>
+                        <span class="tag">Proxmox VE</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Active Directory</span>
+                    </div>
+                </div>
+
+                <div class="skills-group">
+                    <h4>Bazy Danych & Automatyzacja</h4>
+                    <div class="tags">
+                        <span class="tag">SQLAlchemy</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Oracle</span>
+                        <span class="tag">pgAgent</span>
+                    </div>
+                </div>
+
+                <div class="skills-group">
+                    <h4>Sieci & CyberSec</h4>
+                    <div class="tags">
+                        <span class="tag">Tailscale (VPN)</span>
+                        <span class="tag">Wazuh (SIEM)</span>
+                        <span class="tag">TCP/IP</span>
+                        <span class="tag">Hardening</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-section">
+                <h3>Wykształcenie</h3>
+                <div class="skills-group">
+                    <h4 style="color: var(--primary-color);">Magister Informatyki</h4>
+                    <p style="font-size: 11px; margin: 2px 0 0 0; color: var(--text-secondary);">Uniwersytet Marii Curie-Skłodowskiej (UMCS)<br>2024</p>
+                </div>
+            </div>
+            
+            <div class="skills-section">
+                <h3>Języki</h3>
+                <div class="skills-group">
+                    <h4>Angielski</h4>
+                    <p style="font-size: 11px; margin: 2px 0 0 0; color: var(--text-secondary);">B1/B2 (Praca z dokumentacją)</p>
+                </div>
+                <div class="skills-group">
+                    <h4>Polski</h4>
+                    <p style="font-size: 11px; margin: 2px 0 0 0; color: var(--text-secondary);">Ojczysty</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Prawa kolumna -->
+        <div class="right-column">
+            <div class="section-right">
+                <h3>Profil Zawodowy</h3>
+                <p class="profile-text">
+                    Inżynier płynnie łączący programowanie (C#, Python, JS) z zaawansowaną administracją infrastrukturą IT (Linux, AD, Proxmox). Odpowiadam za tworzenie systemów backendowych, automatyzację procesów analitycznych oraz utrzymanie krytycznych aplikacji medycznych. Projektuję wydajne API, równolegle wdrażając procesy CI/CD i rozwiązania Infrastructure as Code. Posiadam bogate, praktyczne zaplecze z zakresu Cyberbezpieczeństwa.
+                </p>
+            </div>
+
+            <div class="section-right">
+                <h3>Doświadczenie Zawodowe</h3>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Informatyk (Backend & Platform Engineer)</span>
+                        <span class="job-date">06.2025 - Obecnie</span>
+                    </div>
+                    <div class="job-company">Narodowy Fundusz Zdrowia (NFZ) · Warszawa</div>
+                    <ul class="job-tasks">
+                        <li>Projektowanie i wdrażanie aplikacji medycznych oraz REST API w ekosystemie C# (.NET).</li>
+                        <li>Implementacja interfejsów (widoki Razor) oraz mechanizmów frontendowych (JavaScript).</li>
+                        <li>Tworzenie skryptów (Python, Pandas, SQLAlchemy) do przetwarzania i integracji danych z PostgreSQL, Oracle i DB2 – eliminacja powtarzalnych procesów manualnych.</li>
+                        <li>Diagnozowanie incydentów produkcyjnych, analiza logów, Triage oraz utrzymanie ciągłości działania aplikacji na serwerach Linux (RedHat).</li>
+                        <li>Automatyzacja procesów bazodanowych przy użyciu pgAgent oraz wirtualizacja usług (Docker).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-right">
+                <h3>Homelab, Projekty i DevOps</h3>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Infrastruktura Proxmox, AD & Tailscale</span>
+                    </div>
+                    <ul class="job-tasks">
+                        <li>Zarządzanie domeną Active Directory (Windows Server 2022/2025) działającą na wirtualizacji Proxmox VE. Centralne zarządzanie logowaniami, GPO i uprawnieniami (RBAC).</li>
+                        <li>Wdrożenie bezpiecznej sieci mesh VPN za pomocą Tailscale łączącej rozproszone urządzenia.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Roadmapa IaC & Game of Active Directory</span>
+                    </div>
+                    <ul class="job-tasks">
+                        <li>Automatyzacja provisioningu środowiska bezpieczeństwa (GOAD) w Proxmoxie za pomocą Terraform, Packer i Ansible (Infrastructure as Code).</li>
+                        <li>Praktyczne użycie agentowych modeli AI (Claude) do przyspieszania diagnozy infrastrukturalnej.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-right">
+                <h3>Szkolenia i Certyfikaty</h3>
+                <ul class="job-tasks">
+                    <li><strong>Active Directory Master</strong> – Securitum</li>
+                    <li><strong>Szkolenia z cyberbezpieczeństwa aplikacji webowych</strong> – Sekurak (2022–2025)</li>
+                    <li><strong>Ochrona Danych Osobowych i Bezpieczeństwo Informacji</strong> – NFZ</li>
+                </ul>
+            </div>
+
+            <div class="rodo">
+                Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. U. z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)).
+            </div>
+        </div>
+    </div>
+</body>
+</html>
