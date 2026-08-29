@@ -1,147 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About Me</title>
+    <title>Damian Tomczyszyn | IT Administrator & CyberSec</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
-        <nav class="navbar">
-            <h1>Damian Tomczyszyn</h1>
+        <nav class="navbar container">
+            <div class="logo">
+                <i class="fa-solid fa-terminal"></i> ~/damian
+            </div>
             <ul class="nav-links">
-                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#more">More About Me</a></li>
+                <li><a href="#projects">Homelab & Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="container">
-        <section class="hero">
-            <img src="img/profile.jpg" alt="Profile Picture" class="profile-image">
+    <main>
+        <section class="hero container">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Damian Tomczyszyn">Damian Tomczyszyn</h1>
+                <p class="subtitle">IT Administrator | Python Automation | CyberSec Enthusiast</p>
+                <p class="summary">
+                    Jestem inżynierem infrastruktury IT, dbającym o niezawodność krytycznych aplikacji.
+                    Specjalizuję się w administracji systemami Linux (RedHat), pisaniu skryptów (Python/Bash) oraz diagnozowaniu incydentów produkcyjnych.
+                    Po godzinach rozwijam się w kierunku cyberbezpieczeństwa (SOC) i zarządzam zaawansowanym środowiskiem Homelab.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Kontakt</a>
+                    <a href="docs/Damian-java-cv.pdf" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-download"></i> Pobierz CV</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/profile.jpg" alt="Damian Tomczyszyn">
+            </div>
         </section>
 
-        <section id="intro" class="intro">
-            <h2>Introduction</h2>
-            <p>
-				I am a 24-year-old Java developer with a strong scientific background and a Master’s degree in Computer Science.
-				 My passion for technology drives me to continuously expand my programming skills through hands-on projects and specialized online courses. 
-				 I have a solid understanding of Java, and I'm constantly exploring new technologies to stay ahead in the ever-evolving tech landscape. 
-				 I’m currently seeking a challenging role as a Java programmer where I can apply my knowledge, contribute to innovative solutions, 
-				 and continue growing as a developer. My personal projects reflect my commitment to mastering the craft, including everything from 
-				 building web applications to automating home systems. I’m excited to bring my enthusiasm, problem-solving skills, and technical expertise
-				  to a dynamic team.     
-			</p>
+        <section id="about" class="about container section-padding">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-user-astronaut"></i> O mnie</h2>
+            </div>
+            <div class="about-text">
+                <p>
+                    Posiadam tytuł magistra informatyki (UMCS) i naturalnie łączę świat zarządzania infrastrukturą z programowaniem. 
+                    Obecnie pracuję jako Backend & Platform Engineer, gdzie na co dzień diagnozuję incydenty produkcyjne, analizuję logi oraz dbam o integralność danych z systemów medycznych w NFZ.
+                </p>
+                <p>
+                    Moją mocną stroną jest <strong>automatyzacja</strong>. Wykorzystuję język Python i powłokę Bash, aby eliminować powtarzalne, manualne zadania, oszczędzając czas całego zespołu.
+                    Jestem aktywnym uczestnikiem szkoleń z cyberbezpieczeństwa (Sekurak) i celuję w stanowiska związane z administracją IT, DevOps lub pracą w Security Operations Center (SOC).
+                </p>
+            </div>
         </section>
 
-		<section id="skills" class="skills">
-			<h2>My Skills</h2>
-			<ul class="skill-list">
-				<li>
-					<span>Java & Spring Boot</span>
-					<div class="progress-bar">
-						<div class="progress" style="width: 35%;"></div> <!-- Set width according to your skill level -->
-					</div>
-				</li>
-				<li>
-					<span>Python & Django</span>
-					<div class="progress-bar">
-						<div class="progress" style="width: 30%;"></div>
-					</div>
-				</li>
-				<li>
-					<span>Relational Databases</span>
-					<div class="progress-bar">
-						<div class="progress" style="width: 30%;"></div>
-					</div>
-				</li>
-				<li>
-					<span>Linux & Windows</span>
-					<div class="progress-bar">
-						<div class="progress" style="width: 50%;"></div>
-					</div>
-				</li>
-				<li>
-					<span>Docker</span>
-					<div class="progress-bar">
-						<div class="progress" style="width: 30%;"></div>
-					</div>
-				</li>
-				<li>
-					<span>Git</span>
-					<div class="progress-bar">
-						<div class="progress" style="width: 30%;"></div>
-					</div>
-				</li>
-				<li>
-					<span>C & C++</span>
-					<div class="progress-bar">
-						<div class="progress" style="width: 30%;"></div>
-					</div>
-				</li>
-				<li>
-					<span>C# & .NET</span>
-					<div class="progress-bar">
-						<div class="progress" style="width: 25%;"></div>
-					</div>
-				</li>
-				<li>
-					<span>Arduino Framework & AVR</span>
-					<div class="progress-bar">
-						<div class="progress" style="width: 50%;"></div>
-					</div>
-				</li>
-			</ul>
-		</section>
-		
-
-        <section id="more" class="main-text">
-            <h2>More About Me</h2>
-            <p>
-                I am interested in both low and high level programming. I have written simple web applications, console applications and C code for 
-				AVR microcontrollers. I am interested in home automation and create many of my own projects using Arduino, ESP32, and Raspberry Pi.
-				 Currently my biggest project is creating an automatic lawn mower robot that uses GPS. Completed projects include an ESP32 based weather 
-				 station, and an ESP8266 based watering using data from a weather station.
-			</p>
+        <section id="skills" class="skills container section-padding">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-code"></i> Technologie i Umiejętności</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Infrastruktura i Wirtualizacja</h3>
+                    <div class="tags">
+                        <span class="tag">Linux (RedHat)</span>
+                        <span class="tag">Windows Server</span>
+                        <span class="tag">Proxmox VE</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Active Directory</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Programowanie i Automatyzacja</h3>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">SQLAlchemy</span>
+                        <span class="tag">Requests</span>
+                        <span class="tag">Bash & PowerShell</span>
+                        <span class="tag">Git (Bitbucket)</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Sieci i Bezpieczeństwo</h3>
+                    <div class="tags">
+                        <span class="tag">Tailscale (SDN/VPN)</span>
+                        <span class="tag">TCP/IP & DNS</span>
+                        <span class="tag">Wazuh (SIEM)</span>
+                        <span class="tag">Hardening</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Bazy Danych i AI</h3>
+                    <div class="tags">
+                        <span class="tag">PostgreSQL & pgAgent</span>
+                        <span class="tag">Oracle & DB2</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Claude AI / AI Agents</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="contact" class="social-links">
-            <h2>Connect with Me</h2>
-            <div class="icons">
-                <a href="https://gitlab.com/damiantomczyszyn" target="_blank">
-                    <img src="img/gitlab.png" alt="GitLab" class="social-icon">
-                </a>
-                <a href="https://www.linkedin.com/in/tomczyszyn/" target="_blank">
-                    <img src="img/linkedin.png" alt="LinkedIn" class="social-icon">
-                </a>
-                <a href="https://github.com/damiantomczyszyn" target="_blank">
-                    <img src="img/github.png" alt="GitHub" class="social-icon">
-                </a>
-				<a href="https://www.facebook.com/damian.tomczyszyn.77" target="_blank">
-                    <img src="img/facebook.png" alt="GitHub" class="social-icon">
-                </a>
+        <section id="projects" class="projects container section-padding">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-server"></i> Homelab i Projekty</h2>
+            </div>
+            <div class="project-cards">
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-server"></i></div>
+                    <h3>Proxmox, AD & Tailscale (Homelab)</h3>
+                    <p>Zarządzam własną domeną Active Directory opartą na Windows Server 2022/2025 (zarządzanie kontami, GPO), postawioną na hypervisorze Proxmox VE. Całość spięta jest siecią mesh VPN przy użyciu Tailscale. Ukończyłem również zaawansowany kurs "Active Directory Master" od Securitum.</p>
+                    <div class="card-tech">
+                        <span>Proxmox</span><span>Active Directory</span><span>Tailscale</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-code-branch"></i></div>
+                    <h3>Automatyzacja Danych w NFZ</h3>
+                    <p>Autorskie narzędzia napisane w Pythonie (Pandas, SQLAlchemy, Requests), służące do integracji i przetwarzania danych z baz PostgreSQL, Oracle i DB2. Automatyzacja harmonogramowana m.in. przy użyciu pgAgent i Dockera.</p>
+                    <div class="card-tech">
+                        <span>Python</span><span>PostgreSQL</span><span>Docker</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-rocket"></i></div>
+                    <h3>Roadmap: Infrastructure as Code & AI</h3>
+                    <p>Obecnie wdrażam narzędzia CI/CD (Jenkins, GitLab CI) oraz IaC (Terraform, Packer, Ansible). Moim celem jest automatyzacja budowy środowiska <i>Game of Active Directory (GOAD)</i> w Proxmox. Na co dzień wykorzystuję agentowe modele AI (Claude) do przyspieszania prac administracyjnych.</p>
+                    <div class="card-tech">
+                        <span>Terraform</span><span>Ansible</span><span>Claude AI</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact container section-padding">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-envelope"></i> Kontakt</h2>
+            </div>
+            <div class="contact-content">
+                <p>Jestem otwarty na wyzwania w rolach związanych z administracją systemami, DevOps oraz Cyberbezpieczeństwem.</p>
+                <div class="contact-methods">
+                    <a href="mailto:Damian.Tomczyszyn@outlook.my" class="contact-item">
+                        <i class="fa-solid fa-at"></i> Damian.Tomczyszyn@outlook.my
+                    </a>
+                    <a href="tel:+48730775485" class="contact-item">
+                        <i class="fa-solid fa-phone"></i> +48 730 775 485
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/tomczyszyn/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/damiantomczyszyn" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://gitlab.com/damiantomczyszyn" target="_blank" aria-label="GitLab"><i class="fa-brands fa-gitlab"></i></a>
+                </div>
             </div>
         </section>
     </main>
-	
-<section id="contact-info" class="contact-info">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out to me via phone:</p>
-    <p class="phone-number">📞 +48 730 775 485</p> 
-	<p class="email-address">📧 <a href="mailto:Damian.Tomczyszyn@outlook.my">Damian.Tomczyszyn@outlook.my</a></p> 
-	<a href="docs/Damian-java-cv.pdf" target="_blank" title="View my CV">
-		<img src="img/cv-icon.png" alt="CV Icon" class="social-icon">
-	</a>
 
-
-</section>
-
-<footer class="footer">
-    <p>&copy; 2024 Damian Tomczyszyn. All rights reserved.</p>
-</footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Damian Tomczyszyn. Zbudowane z wykorzystaniem najlepszych praktyk inżynierskich.</p>
+        </div>
+    </footer>
 </body>
 </html>
