@@ -1,5 +1,5 @@
 // Progressive enhancement only: the page is complete and readable without JS
-// (Polish, system theme, all projects visible, plain anchor navigation).
+// (Polish, system theme, plain anchor navigation).
 (function () {
   "use strict";
 
@@ -147,32 +147,6 @@
       if (section) spy.observe(section);
     });
   }
-
-  /* Project filter -------------------------------------------------------- */
-  var filters = document.querySelectorAll("[data-filter]");
-  var projects = document.querySelectorAll("[data-tags]");
-  var status = document.getElementById("filter-status");
-
-  function applyFilter(value) {
-    var shown = 0;
-    projects.forEach(function (card) {
-      var match = value === "all" || card.getAttribute("data-tags").split(" ").indexOf(value) !== -1;
-      card.hidden = !match;
-      if (match) shown++;
-    });
-    filters.forEach(function (btn) {
-      btn.setAttribute("aria-pressed", String(btn.getAttribute("data-filter") === value));
-    });
-    if (status) {
-      status.textContent = root.lang === "en" ? shown + " projects shown" : "Widoczne projekty: " + shown;
-    }
-  }
-
-  filters.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      applyFilter(btn.getAttribute("data-filter"));
-    });
-  });
 
   /* Copy e-mail ----------------------------------------------------------- */
   document.querySelectorAll("[data-copy]").forEach(function (btn) {

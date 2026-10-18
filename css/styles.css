@@ -59,16 +59,16 @@
   --border-strong: #cbd5e1;
   --text: #0f172a;
   --text-muted: #475569;
-  --text-faint: #64748b;
+  --text-faint: #5b6577;
   --accent: #0369a1;
   --accent-hover: #075985;
   --accent-on: #ffffff;
   --accent-soft: rgba(3, 105, 161, 0.08);
   --accent-ring: rgba(3, 105, 161, 0.35);
-  --ok: #15803d;
-  --ok-soft: rgba(21, 128, 61, 0.1);
-  --wip: #b45309;
-  --wip-soft: rgba(180, 83, 9, 0.1);
+  --ok: #166534;
+  --ok-soft: rgba(22, 101, 52, 0.09);
+  --wip: #92400e;
+  --wip-soft: rgba(146, 64, 14, 0.09);
   --shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 8px 24px rgba(15, 23, 42, 0.06);
   --header-bg: rgba(248, 250, 252, 0.85);
   color-scheme: light;
@@ -809,35 +809,6 @@ ul[role="list"] {
 }
 
 /* Projects ---------------------------------------------------------------- */
-.filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 24px;
-}
-
-.filter {
-  padding: 7px 14px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: var(--surface);
-  color: var(--text-muted);
-  font: 500 0.875rem/1.2 var(--font-sans);
-  cursor: pointer;
-  transition: color 0.15s, border-color 0.15s, background-color 0.15s;
-}
-
-.filter:hover {
-  color: var(--text);
-  border-color: var(--border-strong);
-}
-
-.filter[aria-pressed="true"] {
-  border-color: var(--accent);
-  background: var(--accent-soft);
-  color: var(--text);
-}
-
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr));
@@ -853,20 +824,13 @@ ul[role="list"] {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--surface);
-  transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
 }
 
-.project:hover {
-  border-color: var(--border-strong);
-  box-shadow: var(--shadow);
-}
-
-.project[hidden] {
-  display: none;
+.projects--featured {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr));
 }
 
 .project--featured {
-  grid-column: span 1;
   border-top: 3px solid var(--accent);
 }
 
@@ -975,7 +939,7 @@ ul[role="list"] {
 /* Skills ------------------------------------------------------------------ */
 .skills {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
   gap: 18px;
 }
 
@@ -1036,6 +1000,7 @@ ul[role="list"] {
 /* Credentials (training, languages) -------------------------------------- */
 .creds {
   display: grid;
+  margin-top: 18px;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 18px;
 }
@@ -1291,15 +1256,10 @@ a.contact-row:hover {
 
   .site-header,
   .skip-link,
-  .filters,
   .hero__actions,
   .copy-btn,
   .hero::before {
     display: none !important;
-  }
-
-  .project[hidden] {
-    display: flex !important;
   }
 
   .section {

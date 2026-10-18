@@ -2,6 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
     <title>CV - Damian Tomczyszyn</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -78,6 +79,14 @@
             display: flex;
             align-items: center;
             gap: 10px;
+        }
+        .contact-info a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .contact-info .nowrap {
+            white-space: nowrap;
+            letter-spacing: -0.2px;
         }
         .contact-info i {
             color: var(--primary-color);
@@ -183,11 +192,12 @@
             
             <h3>Kontakt</h3>
             <ul class="contact-info">
-                <li><i class="fa-solid fa-phone"></i> +48 730 775 485</li>
-                <li><i class="fa-solid fa-envelope"></i> Damian.Tomczyszyn@outlook.my</li>
+                <li><i class="fa-solid fa-phone"></i> <a href="tel:+48730775485">+48 730 775 485</a></li>
+                <li><i class="fa-solid fa-envelope"></i> <a href="mailto:Damian.Tomczyszyn@outlook.my">Damian.Tomczyszyn@outlook.my</a></li>
                 <li><i class="fa-solid fa-location-dot"></i> Warszawa, Polska</li>
-                <li><i class="fa-brands fa-linkedin"></i> linkedin.com/in/tomczyszyn/</li>
-                <li><i class="fa-brands fa-github"></i> github.com/damiantomczyszyn</li>
+                <li class="nowrap"><i class="fa-solid fa-globe"></i> <a href="https://damiantomczyszyn.github.io/About-Me/">damiantomczyszyn.github.io/About-Me</a></li>
+                <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/tomczyszyn/">linkedin.com/in/tomczyszyn/</a></li>
+                <li><i class="fa-brands fa-github"></i> <a href="https://github.com/damiantomczyszyn">github.com/damiantomczyszyn</a></li>
             </ul>
 
             <div class="skills-section">
