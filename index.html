@@ -1,168 +1,382 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="pl"
+      data-title-pl="Damian Tomczyszyn — Fullstack Developer (.NET / Python)"
+      data-title-en="Damian Tomczyszyn — Fullstack Developer (.NET / Python)"
+      data-description-pl="Fullstack developer (.NET / Python) z Warszawy. Projektuję API w C#, automatyzuję przetwarzanie danych w Pythonie i znam infrastrukturę: Linux, Docker, Proxmox, Active Directory."
+      data-description-en="Fullstack developer (.NET / Python) based in Warsaw, Poland. I design C# APIs, automate data processing in Python and know the infrastructure underneath: Linux, Docker, Proxmox, Active Directory.">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Damian Tomczyszyn | Fullstack Dev & CyberSec</title>
+    <title>Damian Tomczyszyn — Fullstack Developer (.NET / Python)</title>
+    <meta name="description" content="Fullstack developer (.NET / Python) z Warszawy. Projektuję API w C#, automatyzuję przetwarzanie danych w Pythonie i znam infrastrukturę: Linux, Docker, Proxmox, Active Directory.">
+    <meta name="author" content="Damian Tomczyszyn">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="canonical" href="https://damiantomczyszyn.github.io/About-Me/">
+    <link rel="alternate" hreflang="pl" href="https://damiantomczyszyn.github.io/About-Me/">
+    <link rel="alternate" hreflang="en" href="https://damiantomczyszyn.github.io/About-Me/?lang=en">
+    <link rel="alternate" hreflang="x-default" href="https://damiantomczyszyn.github.io/About-Me/">
+
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Damian Tomczyszyn — Fullstack Developer (.NET / Python)">
+    <meta property="og:description" content="Fullstack developer (.NET / Python) z Warszawy. Projektuję API w C#, automatyzuję przetwarzanie danych w Pythonie i znam infrastrukturę: Linux, Docker, Proxmox, Active Directory.">
+    <meta property="og:url" content="https://damiantomczyszyn.github.io/About-Me/">
+    <meta property="og:image" content="https://damiantomczyszyn.github.io/About-Me/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Damian Tomczyszyn — Fullstack Developer (.NET / Python)">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="profile:first_name" content="Damian">
+    <meta property="profile:last_name" content="Tomczyszyn">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        // Before first paint: language (?lang=en or saved choice; Polish by default) and saved theme.
+        (function () {
+            var d = document.documentElement, l = null, t = null;
+            try {
+                l = new URLSearchParams(location.search).get("lang") || localStorage.getItem("dt-lang");
+                t = localStorage.getItem("dt-theme");
+            } catch (e) {}
+            d.lang = l === "en" ? "en" : "pl";
+            if (t === "dark" || t === "light") d.setAttribute("data-theme", t);
+            d.classList.add("js");
+        })();
+    </script>
+    <script src="js/main.js" defer></script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Damian Tomczyszyn",
+        "jobTitle": "Fullstack Developer (.NET / Python)",
+        "url": "https://damiantomczyszyn.github.io/About-Me/",
+        "image": "https://damiantomczyszyn.github.io/About-Me/img/profile-480.jpg",
+        "email": "mailto:Damian.Tomczyszyn@outlook.my",
+        "address": { "@type": "PostalAddress", "addressLocality": "Warszawa", "addressCountry": "PL" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Uniwersytet Marii Curie-Skłodowskiej w Lublinie" },
+        "knowsLanguage": ["pl", "en"],
+        "knowsAbout": ["C#", ".NET", "Python", "JavaScript", "PostgreSQL", "Linux", "Docker", "Proxmox VE", "Active Directory"],
+        "sameAs": [
+            "https://www.linkedin.com/in/tomczyszyn/",
+            "https://github.com/damiantomczyszyn",
+            "https://gitlab.com/damiantomczyszyn"
+        ]
+    }
+    </script>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar container">
-            <div class="logo">
-                <i class="fa-solid fa-terminal"></i> ~/damian
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+        <symbol id="i-gitlab" viewBox="0 0 24 24"><path d="m23.6 9.593-.033-.086L20.3.98a.851.851 0 0 0-.336-.405.875.875 0 0 0-1 .054.875.875 0 0 0-.29.44L16.47 7.818H7.537L5.333 1.07a.857.857 0 0 0-.29-.441.875.875 0 0 0-1-.054.859.859 0 0 0-.336.405L.433 9.502l-.032.086a6.066 6.066 0 0 0 2.012 7.01l.01.009.03.021 4.977 3.727 2.462 1.863 1.5 1.132a1.008 1.008 0 0 0 1.22 0l1.499-1.132 2.461-1.863 5.006-3.75.013-.01a6.068 6.068 0 0 0 2.01-7.002z"/></symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+        <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+        <symbol id="i-briefcase" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+        <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+        <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+        <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+        <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+        <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol>
+        <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
+        <symbol id="i-server" viewBox="0 0 24 24"><rect width="20" height="8" x="2" y="2" rx="2"/><rect width="20" height="8" x="2" y="14" rx="2"/><path d="M6 6h.01M6 18h.01"/></symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></symbol>
+        <symbol id="i-cpu" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></symbol>
+        <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol>
+        <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+        <symbol id="i-terminal" viewBox="0 0 24 24"><path d="m4 17 6-6-6-6"/><path d="M12 19h8"/></symbol>
+    </svg>
+
+    <a class="skip-link" href="#main"><span lang="pl">Przejdź do treści</span><span lang="en">Skip to content</span></a>
+
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="brand" href="#top" aria-label="Damian Tomczyszyn">
+                <span class="brand__mark" aria-hidden="true">DT</span>
+                <span class="brand__name">Damian Tomczyszyn</span>
+            </a>
+
+            <nav class="nav" id="site-nav" data-label-pl="Nawigacja główna" data-label-en="Main navigation" aria-label="Nawigacja główna">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="#o-mnie"><span lang="pl">O mnie</span><span lang="en">About</span></a></li>
+                    <li><a class="nav__link" href="#doswiadczenie"><span lang="pl">Doświadczenie</span><span lang="en">Experience</span></a></li>
+                    <li><a class="nav__link" href="#projekty"><span lang="pl">Projekty</span><span lang="en">Projects</span></a></li>
+                    <li><a class="nav__link" href="#umiejetnosci"><span lang="pl">Umiejętności</span><span lang="en">Skills</span></a></li>
+                    <li><a class="nav__link" href="#kontakt"><span lang="pl">Kontakt</span><span lang="en">Contact</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="header-tools">
+                <div class="lang-switch" role="group" data-label-pl="Język strony" data-label-en="Page language" aria-label="Język strony">
+                    <button type="button" data-set-lang="pl" aria-pressed="true" title="Polski">PL</button>
+                    <button type="button" data-set-lang="en" aria-pressed="false" title="English">EN</button>
+                </div>
+                <button type="button" class="icon-button theme-toggle" data-theme-toggle data-label-pl="Przełącz jasny / ciemny motyw" data-label-en="Toggle light / dark theme" aria-label="Przełącz jasny / ciemny motyw">
+                    <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+                    <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+                </button>
+                <button type="button" class="icon-button menu-toggle" data-menu-toggle aria-controls="site-nav" aria-expanded="false" data-label-pl="Menu" data-label-en="Menu" aria-label="Menu">
+                    <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+                </button>
             </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Homelab & Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="hero container">
-            <div class="hero-content">
-                <h1 class="glitch" data-text="Damian Tomczyszyn">Damian Tomczyszyn</h1>
-                <p class="subtitle">Fullstack Developer (.NET/Python) | IT Administrator | CyberSec Enthusiast</p>
-                <p class="summary">
-                    Jestem inżynierem łączącym świat programowania (C#, Python, JS) z zarządzaniem infrastrukturą IT (Linux, AD, Proxmox). 
-                    Tworzę aplikacje backendowe i widoki fullstack, wdrażam automatyzacje, diagnozuję błędy na środowiskach testowych oraz pasjonuję się cyberbezpieczeństwem.
-                </p>
-                <div class="hero-actions">
-                    <a href="#contact" class="btn btn-primary">Kontakt</a>
-                    <a href="docs/Damian_Tomczyszyn_CV_Uniwersalne.pdf" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-download"></i> Pobierz CV</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="img/profile.jpg" alt="Damian Tomczyszyn">
-            </div>
-        </section>
-
-        <section id="about" class="about container section-padding">
-            <div class="section-title">
-                <h2><i class="fa-solid fa-user-astronaut"></i> O mnie</h2>
-            </div>
-            <div class="about-text">
-                <p>
-                    Posiadam tytuł magistra informatyki (UMCS). Na co dzień pracuję w NFZ jako Backend & Platform Engineer. 
-                    Odpowiadam tam za rozwój aplikacji — projektuję REST API w technologii <strong>C# (.NET)</strong>, buduję widoki w technologii <strong>Razor</strong> i ożywiam je za pomocą <strong>JavaScriptu</strong>.
-                </p>
-                <p>
-                    Moją drugą wielką pasją jest infrastruktura i automatyzacja. Aktywnie wdrażam skrypty w języku Python i Bash, które eliminują pracę manualną. Zarządzam konfiguracją oraz z sukcesami diagnozuję incydenty i błędy na serwerach testowych i wewnętrznych (Linux). 
-                    Ponadto stale rozwijam kompetencje w obszarze bezpieczeństwa (szkolenia Sekurak, własny SOC i Homelab).
-                </p>
-            </div>
-        </section>
-
-        <section id="skills" class="skills container section-padding">
-            <div class="section-title">
-                <h2><i class="fa-solid fa-code"></i> Technologie i Umiejętności</h2>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programowanie i Fullstack</h3>
-                    <div class="tags">
-                        <span class="tag">C# & .NET</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Razor Views</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">Bash & PowerShell</span>
-                        <span class="tag">Git (Bitbucket)</span>
+    <main id="main">
+        <!-- HERO -->
+        <section class="hero" id="top" aria-labelledby="hero-name">
+            <div class="container hero__grid">
+                <div class="hero__text">
+                    <p class="hero__role">Fullstack Developer · .NET / Python</p>
+                    <h1 class="hero__name" id="hero-name">Damian Tomczyszyn</h1>
+                    <p class="hero__tagline">
+                        <span lang="pl">Tworzę aplikacje w&nbsp;.NET i&nbsp;Pythonie, automatyzuję pracę z&nbsp;danymi i&nbsp;rozumiem infrastrukturę, na której to wszystko działa.</span>
+                        <span lang="en">I build .NET and Python applications, automate data work and understand the infrastructure it all runs on.</span>
+                    </p>
+                    <p class="hero__summary">
+                        <span lang="pl">W&nbsp;Narodowym Funduszu Zdrowia projektuję API w&nbsp;C#, buduję interfejsy w&nbsp;Razor i&nbsp;JavaScripcie oraz piszę skrypty w&nbsp;Pythonie, które integrują dane z&nbsp;PostgreSQL, Oracle i&nbsp;DB2. Po godzinach rozwijam homelab (Proxmox, Active Directory) i&nbsp;uczę się bezpieczeństwa IT.</span>
+                        <span lang="en">At Poland's National Health Fund (NFZ) I design C# APIs, build Razor and JavaScript interfaces and write Python scripts that integrate data from PostgreSQL, Oracle and DB2. After hours I run a homelab (Proxmox, Active Directory) and study IT security.</span>
+                    </p>
+                    <ul class="hero__facts">
+                        <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> <span lang="pl">Warszawa</span><span lang="en">Warsaw, Poland</span></li>
+                        <li><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg> <span lang="pl">NFZ, od 06.2025</span><span lang="en">NFZ, since 06/2025</span></li>
+                        <li><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg> <span lang="pl">mgr informatyki, UMCS</span><span lang="en">MSc Computer Science, UMCS</span></li>
+                    </ul>
+                    <div class="hero__actions">
+                        <a class="btn btn--primary" href="docs/Damian_Tomczyszyn_CV_Uniwersalne.pdf" download>
+                            <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+                            <span lang="pl">Pobierz CV <small>(PDF)</small></span>
+                            <span lang="en">Download CV <small>(PDF, Polish)</small></span>
+                        </a>
+                        <a class="btn btn--ghost" href="#kontakt"><span lang="pl">Kontakt</span><span lang="en">Get in touch</span></a>
+                        <div class="hero__social">
+                            <a class="social-link" href="https://github.com/damiantomczyszyn" aria-label="GitHub"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-github"/></svg></a>
+                            <a class="social-link" href="https://www.linkedin.com/in/tomczyszyn/" aria-label="LinkedIn"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+                            <a class="social-link" href="https://gitlab.com/damiantomczyszyn" aria-label="GitLab"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-gitlab"/></svg></a>
+                        </div>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Infrastruktura i Wirtualizacja</h3>
-                    <div class="tags">
-                        <span class="tag">Linux (RedHat)</span>
-                        <span class="tag">Windows Server</span>
-                        <span class="tag">Proxmox VE</span>
-                        <span class="tag">Docker</span>
-                        <span class="tag">Active Directory</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Bazy Danych i AI</h3>
-                    <div class="tags">
-                        <span class="tag">SQLAlchemy & Pandas</span>
-                        <span class="tag">PostgreSQL & pgAgent</span>
-                        <span class="tag">Oracle & DB2</span>
-                        <span class="tag">Claude AI / AI Agents</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Sieci i Bezpieczeństwo</h3>
-                    <div class="tags">
-                        <span class="tag">Tailscale (SDN/VPN)</span>
-                        <span class="tag">TCP/IP & DNS</span>
-                        <span class="tag">Wazuh (SIEM)</span>
-                        <span class="tag">Hardening</span>
-                    </div>
+                <div class="hero__photo">
+                    <picture>
+                        <source type="image/webp" srcset="img/profile-320.webp 320w, img/profile-480.webp 480w" sizes="(max-width: 720px) 148px, 300px">
+                        <img src="img/profile-480.jpg" srcset="img/profile-320.jpg 320w, img/profile-480.jpg 480w" sizes="(max-width: 720px) 148px, 300px"
+                             width="480" height="600" alt="Zdjęcie portretowe: Damian Tomczyszyn" data-alt-pl="Zdjęcie portretowe: Damian Tomczyszyn" data-alt-en="Portrait photo of Damian Tomczyszyn" fetchpriority="high">
+                    </picture>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="projects container section-padding">
-            <div class="section-title">
-                <h2><i class="fa-solid fa-server"></i> Projekty i Doświadczenie</h2>
-            </div>
-            <div class="project-cards">
-                <div class="card">
-                    <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
-                    <h3>Fullstack Development (.NET/JS)</h3>
-                    <p>Tworzenie i rozwój aplikacji wewnętrznych dla NFZ. Pisanie wydajnego API w języku C# oraz implementacja interaktywnych interfejsów użytkownika z wykorzystaniem widoków Razor i czystego JavaScriptu. Zarządzanie konfiguracją na środowiskach testowych.</p>
-                    <div class="card-tech">
-                        <span>C#</span><span>.NET</span><span>JavaScript</span><span>Razor</span>
-                    </div>
+        <!-- ABOUT -->
+        <section class="section section--alt" id="o-mnie" aria-labelledby="about-title">
+            <div class="container">
+                <div class="section__head">
+                    <span class="eyebrow"><span lang="pl">O mnie</span><span lang="en">About</span></span>
+                    <h2 class="section__title" id="about-title">
+                        <span lang="pl">Programista, który rozumie infrastrukturę</span>
+                        <span lang="en">A developer who understands the infrastructure</span>
+                    </h2>
                 </div>
-                <div class="card">
-                    <div class="card-icon"><i class="fa-solid fa-server"></i></div>
-                    <h3>Proxmox, AD & Tailscale (Homelab)</h3>
-                    <p>Zarządzam własną domeną Active Directory opartą na Windows Server 2022/2025, postawioną na hypervisorze Proxmox VE. Całość spięta jest siecią mesh VPN przy użyciu Tailscale. Ukończony kurs "Active Directory Master" (Securitum).</p>
-                    <div class="card-tech">
-                        <span>Proxmox</span><span>Active Directory</span><span>Tailscale</span>
+                <div class="about">
+                    <div class="prose">
+                        <p lang="pl">
+                            Jestem magistrem informatyki (UMCS, specjalizacja programistyczna). Od czerwca 2025&nbsp;r. pracuję w&nbsp;<strong>Narodowym Funduszu Zdrowia</strong> jako informatyk. W&nbsp;praktyce łączę rolę backend developera i&nbsp;inżyniera platformy: piszę kod w&nbsp;<strong>C# (.NET)</strong>, a&nbsp;potem sam konfiguruję i&nbsp;wdrażam poprawki na serwerach testowych z&nbsp;<strong>Linuksem (RedHat)</strong> i&nbsp;szukam przyczyn błędów w&nbsp;logach.
+                        </p>
+                        <p lang="en">
+                            I hold an MSc in Computer Science (UMCS, software development track). Since June 2025 I've worked at Poland's <strong>National Health Fund (NFZ)</strong>. In practice the role combines backend development and platform work: I write <strong>C# (.NET)</strong> code, then configure and deploy fixes on <strong>Linux (RedHat)</strong> test servers myself and trace bugs through the logs.
+                        </p>
+                        <p lang="pl">
+                            Dużą część pracy stanowią dane: piszę skrypty w&nbsp;<strong>Pythonie</strong> (Pandas, SQLAlchemy), które łączą i&nbsp;weryfikują dane z&nbsp;PostgreSQL, Oracle i&nbsp;DB2, oraz automatyzuję zadania bazodanowe w&nbsp;pgAgent. Dzięki temu powtarzalne, ręczne procesy przestają być ręczne.
+                        </p>
+                        <p lang="en">
+                            A large part of the job is data: I write <strong>Python</strong> scripts (Pandas, SQLAlchemy) that combine and validate data from PostgreSQL, Oracle and DB2, and I automate database jobs with pgAgent, so that repetitive manual processes stop being manual.
+                        </p>
+                        <p lang="pl">
+                            Po pracy utrzymuję <strong>homelab</strong>: domenę Active Directory na Windows Server, uruchomioną na Proxmox VE i&nbsp;spiętą siecią Tailscale. Bezpieczeństwo IT rozwijam na szkoleniach Sekuraka i&nbsp;Securitum. Wcześniej programowałem w&nbsp;Javie (Spring Boot) oraz w&nbsp;C/C++ dla mikrokontrolerów, co widać w&nbsp;projektach poniżej.
+                        </p>
+                        <p lang="en">
+                            Outside work I run a <strong>homelab</strong>: an Active Directory domain on Windows Server, hosted on Proxmox VE and connected with Tailscale. I build my security skills through Sekurak and Securitum trainings. Before .NET I wrote Java (Spring Boot) and C/C++ for microcontrollers, which you can see in the projects below.
+                        </p>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-icon"><i class="fa-solid fa-rocket"></i></div>
-                    <h3>Roadmap: IaC & AI Automation</h3>
-                    <p>Rozwój infrastruktury jako kodu (Terraform, Packer, Ansible) do automatycznego provisioningu środowiska <i>Game of Active Directory (GOAD)</i> w Proxmoxie. W codziennej pracy intensywnie wspomagam się agentowymi modelami AI (Claude, Antigravity).</p>
-                    <div class="card-tech">
-                        <span>Terraform</span><span>Ansible</span><span>Claude AI</span><span>Python</span>
-                    </div>
+                    <ul class="focus-list">
+                        <li class="focus-item">
+                            <span class="focus-item__icon"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span>
+                            <div>
+                                <h3><span lang="pl">Backend i&nbsp;fullstack</span><span lang="en">Backend &amp; fullstack</span></h3>
+                                <p>C# / .NET · REST API · Razor · JavaScript</p>
+                            </div>
+                        </li>
+                        <li class="focus-item">
+                            <span class="focus-item__icon"><svg class="icon" aria-hidden="true"><use href="#i-database"/></svg></span>
+                            <div>
+                                <h3><span lang="pl">Dane i&nbsp;automatyzacja</span><span lang="en">Data &amp; automation</span></h3>
+                                <p>Python · Pandas · SQLAlchemy · PostgreSQL · Oracle · DB2</p>
+                            </div>
+                        </li>
+                        <li class="focus-item">
+                            <span class="focus-item__icon"><svg class="icon" aria-hidden="true"><use href="#i-server"/></svg></span>
+                            <div>
+                                <h3><span lang="pl">Infrastruktura</span><span lang="en">Infrastructure</span></h3>
+                                <p>Linux (RedHat) · Docker · Proxmox VE · Windows Server · AD</p>
+                            </div>
+                        </li>
+                        <li class="focus-item">
+                            <span class="focus-item__icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+                            <div>
+                                <h3><span lang="pl">Bezpieczeństwo</span><span lang="en">Security</span></h3>
+                                <p lang="pl">Wazuh (SIEM) · hardening · szkolenia Sekurak i&nbsp;Securitum</p>
+                                <p lang="en">Wazuh (SIEM) · hardening · Sekurak and Securitum trainings</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact container section-padding">
-            <div class="section-title">
-                <h2><i class="fa-solid fa-envelope"></i> Kontakt</h2>
-            </div>
-            <div class="contact-content">
-                <p>Jestem otwarty na wyzwania w rolach związanych z programowaniem, DevOps oraz Cyberbezpieczeństwem.</p>
-                <div class="contact-methods">
-                    <a href="mailto:Damian.Tomczyszyn@outlook.my" class="contact-item">
-                        <i class="fa-solid fa-at"></i> Damian.Tomczyszyn@outlook.my
-                    </a>
-                    <a href="tel:+48730775485" class="contact-item">
-                        <i class="fa-solid fa-phone"></i> +48 730 775 485
-                    </a>
+        <!-- EXPERIENCE -->
+        <section class="section" id="doswiadczenie" aria-labelledby="exp-title">
+            <div class="container">
+                <div class="section__head">
+                    <span class="eyebrow"><span lang="pl">Doświadczenie</span><span lang="en">Experience</span></span>
+                    <h2 class="section__title" id="exp-title">
+                        <span lang="pl">Praca i&nbsp;wykształcenie</span>
+                        <span lang="en">Work &amp; education</span>
+                    </h2>
                 </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/tomczyszyn/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/damiantomczyszyn" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://gitlab.com/damiantomczyszyn" target="_blank" aria-label="GitLab"><i class="fa-brands fa-gitlab"></i></a>
+
+                <ol class="timeline" role="list">
+                    <li class="entry">
+                        <div class="entry__when">
+                            <span lang="pl">06.2025 – obecnie</span><span lang="en">Jun 2025 – present</span><br>
+                            <span class="now"><span lang="pl">Obecnie</span><span lang="en">Current</span></span>
+                        </div>
+                        <div class="entry__body">
+                            <h3 class="entry__title"><span lang="pl">Informatyk (Backend &amp; Platform Engineer)</span><span lang="en">IT Specialist (Backend &amp; Platform Engineer)</span></h3>
+                            <p class="entry__org"><span lang="pl">Narodowy Fundusz Zdrowia (NFZ) · Warszawa</span><span lang="en">National Health Fund of Poland (NFZ) · Warsaw</span></p>
+                            <ul class="entry__points" lang="pl">
+                                <li>Projektowanie API w&nbsp;C# (.NET) oraz budowa interfejsów (widoki Razor, JavaScript) dla systemów i&nbsp;aplikacji wewnętrznych.</li>
+                                <li>Zarządzanie konfiguracją i&nbsp;wdrażanie poprawek na serwerach testowych (Linux RedHat).</li>
+                                <li>Skrypty w&nbsp;Pythonie (Pandas, SQLAlchemy) do przetwarzania i&nbsp;integracji danych z&nbsp;PostgreSQL, Oracle i&nbsp;DB2, eliminujące powtarzalne procesy manualne.</li>
+                                <li>Diagnozowanie błędów na podstawie logów, analiza problemów oraz weryfikacja spójności danych między źródłami.</li>
+                                <li>Automatyzacja procesów bazodanowych w&nbsp;pgAgent oraz konteneryzacja usług testowych (Docker).</li>
+                            </ul>
+                            <ul class="entry__points" lang="en">
+                                <li>Designing C# (.NET) APIs and building interfaces (Razor views, JavaScript) for internal systems and applications.</li>
+                                <li>Managing configuration and deploying fixes on test servers (Linux RedHat).</li>
+                                <li>Python scripts (Pandas, SQLAlchemy) that process and integrate data from PostgreSQL, Oracle and DB2, replacing repetitive manual work.</li>
+                                <li>Diagnosing bugs from logs, analysing issues and validating data consistency across sources.</li>
+                                <li>Automating database jobs with pgAgent and running test services in Docker containers.</li>
+                            </ul>
+                            <ul class="tag-list" aria-label="Technologie" data-label-pl="Technologie" data-label-en="Technologies">
+                                <li class="tag">C#</li><li class="tag">.NET</li><li class="tag">Razor</li><li class="tag">JavaScript</li><li class="tag">Python</li><li class="tag">Pandas</li><li class="tag">SQLAlchemy</li><li class="tag">PostgreSQL</li><li class="tag">Oracle</li><li class="tag">DB2</li><li class="tag">pgAgent</li><li class="tag">Docker</li><li class="tag">RedHat</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!--INTERNSHIP-->
+                </ol>
+
+                <h3 class="subhead"><span lang="pl">Wykształcenie</span><span lang="en">Education</span></h3>
+                <ol class="timeline" role="list">
+                    <!--EDUCATION-->
+                </ol>
+            </div>
+        </section>
+
+        <!--PROJECTS-->
+
+        <!--SKILLS-->
+
+        <!-- CONTACT -->
+        <section class="section" id="kontakt" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="contact">
+                    <div>
+                        <span class="eyebrow"><span lang="pl">Kontakt</span><span lang="en">Contact</span></span>
+                        <h2 class="contact__title" id="contact-title"><span lang="pl">Porozmawiajmy</span><span lang="en">Let's talk</span></h2>
+                        <p class="contact__lead">
+                            <span lang="pl">Chętnie porozmawiam o&nbsp;rolach związanych z&nbsp;programowaniem (.NET, Python), DevOps i&nbsp;bezpieczeństwem IT.</span>
+                            <span lang="en">I'm happy to talk about roles in software development (.NET, Python), DevOps and IT security.</span>
+                        </p>
+                        <div class="hero__actions">
+                            <a class="btn btn--primary" href="mailto:Damian.Tomczyszyn@outlook.my">
+                                <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+                                <span lang="pl">Napisz e-mail</span><span lang="en">Send an e-mail</span>
+                            </a>
+                            <a class="btn btn--ghost" href="docs/Damian_Tomczyszyn_CV_Uniwersalne.pdf" download>
+                                <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+                                <span lang="pl">CV (PDF)</span><span lang="en">CV (PDF, Polish)</span>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="contact__list">
+                        <li>
+                            <div class="contact-row">
+                                <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+                                <a href="mailto:Damian.Tomczyszyn@outlook.my" style="text-decoration:none;color:inherit">
+                                    <span class="contact-row__label">E-mail</span>
+                                    <span class="contact-row__value">Damian.Tomczyszyn@outlook.my</span>
+                                </a>
+                                <button type="button" class="copy-btn" data-copy="Damian.Tomczyszyn@outlook.my"><span lang="pl">Kopiuj</span><span lang="en">Copy</span></button>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="contact-row" href="tel:+48730775485">
+                                <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+                                <span>
+                                    <span class="contact-row__label"><span lang="pl">Telefon</span><span lang="en">Phone</span></span>
+                                    <span class="contact-row__value">+48 730 775 485</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact-row" href="https://www.linkedin.com/in/tomczyszyn/">
+                                <svg class="icon icon--fill" aria-hidden="true"><use href="#i-linkedin"/></svg>
+                                <span>
+                                    <span class="contact-row__label">LinkedIn</span>
+                                    <span class="contact-row__value">linkedin.com/in/tomczyszyn</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact-row" href="https://github.com/damiantomczyszyn">
+                                <svg class="icon icon--fill" aria-hidden="true"><use href="#i-github"/></svg>
+                                <span>
+                                    <span class="contact-row__label">GitHub</span>
+                                    <span class="contact-row__value">github.com/damiantomczyszyn</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact-row" href="https://gitlab.com/damiantomczyszyn">
+                                <svg class="icon icon--fill" aria-hidden="true"><use href="#i-gitlab"/></svg>
+                                <span>
+                                    <span class="contact-row__label">GitLab</span>
+                                    <span class="contact-row__value">gitlab.com/damiantomczyszyn</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Damian Tomczyszyn. Zbudowane z wykorzystaniem najlepszych praktyk inżynierskich.</p>
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p>© 2026 Damian Tomczyszyn</p>
+            <p>
+                <span lang="pl">Ostatnia aktualizacja: październik 2026 · <a href="https://github.com/damiantomczyszyn/About-Me">kod strony</a></span>
+                <span lang="en">Last updated: October 2026 · <a href="https://github.com/damiantomczyszyn/About-Me">site source</a></span>
+            </p>
         </div>
     </footer>
 </body>
