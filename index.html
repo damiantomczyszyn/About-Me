@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="pl"
-      data-title-pl="Damian Tomczyszyn — Fullstack Developer (.NET / Python)"
-      data-title-en="Damian Tomczyszyn — Fullstack Developer (.NET / Python)"
-      data-description-pl="Fullstack developer (.NET / Python) z Warszawy. Projektuję API w C#, automatyzuję przetwarzanie danych w Pythonie i znam infrastrukturę: Linux, Docker, Proxmox, Active Directory."
-      data-description-en="Fullstack developer (.NET / Python) based in Warsaw, Poland. I design C# APIs, automate data processing in Python and know the infrastructure underneath: Linux, Docker, Proxmox, Active Directory.">
+      data-title-pl="Damian Tomczyszyn — Backend Developer (.NET / Python)"
+      data-title-en="Damian Tomczyszyn — Backend Developer (.NET / Python)"
+      data-description-pl="Backend developer (.NET / Python) z Warszawy. Tworzę API w C#, automatyzuję integrację danych w Pythonie i znam Linuksa, Dockera oraz Active Directory."
+      data-description-en="Backend developer (.NET / Python) in Warsaw, Poland. I build C# APIs, automate data integration in Python and know Linux, Docker and Active Directory.">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Damian Tomczyszyn — Fullstack Developer (.NET / Python)</title>
-    <meta name="description" content="Fullstack developer (.NET / Python) z Warszawy. Projektuję API w C#, automatyzuję przetwarzanie danych w Pythonie i znam infrastrukturę: Linux, Docker, Proxmox, Active Directory.">
+    <title>Damian Tomczyszyn — Backend Developer (.NET / Python)</title>
+    <meta name="description" content="Backend developer (.NET / Python) z Warszawy. Tworzę API w C#, automatyzuję integrację danych w Pythonie i znam Linuksa, Dockera oraz Active Directory.">
     <meta name="author" content="Damian Tomczyszyn">
-    <meta name="theme-color" content="#0f172a">
+    <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
     <link rel="canonical" href="https://damiantomczyszyn.github.io/About-Me/">
+    <link rel="alternate" hreflang="pl" href="https://damiantomczyszyn.github.io/About-Me/">
+    <link rel="alternate" hreflang="en" href="https://damiantomczyszyn.github.io/About-Me/?lang=en">
+    <link rel="alternate" hreflang="x-default" href="https://damiantomczyszyn.github.io/About-Me/">
 
     <meta property="og:type" content="profile">
-    <meta property="og:title" content="Damian Tomczyszyn — Fullstack Developer (.NET / Python)">
-    <meta property="og:description" content="Fullstack developer (.NET / Python) z Warszawy. Projektuję API w C#, automatyzuję przetwarzanie danych w Pythonie i znam infrastrukturę: Linux, Docker, Proxmox, Active Directory.">
+    <meta property="og:title" content="Damian Tomczyszyn — Backend Developer (.NET / Python)">
+    <meta property="og:description" content="Backend developer (.NET / Python) z Warszawy. Tworzę API w C#, automatyzuję integrację danych w Pythonie i znam Linuksa, Dockera oraz Active Directory.">
     <meta property="og:url" content="https://damiantomczyszyn.github.io/About-Me/">
     <meta property="og:image" content="https://damiantomczyszyn.github.io/About-Me/img/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Damian Tomczyszyn — Fullstack Developer (.NET / Python)">
+    <meta property="og:image:alt" content="Damian Tomczyszyn — Backend Developer (.NET / Python)">
     <meta property="og:locale" content="pl_PL">
-    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="en_GB">
     <meta property="profile:first_name" content="Damian">
     <meta property="profile:last_name" content="Tomczyszyn">
     <meta name="twitter:card" content="summary_large_image">
@@ -31,6 +35,7 @@
     <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
     <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter-latin-ext-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/styles.css">
 
     <script>
@@ -41,7 +46,7 @@
                 l = new URLSearchParams(location.search).get("lang") || localStorage.getItem("dt-lang");
                 t = localStorage.getItem("dt-theme");
             } catch (e) {}
-            d.lang = l === "en" ? "en" : "pl";
+            d.lang = String(l).toLowerCase() === "en" ? "en" : "pl";
             if (t === "dark" || t === "light") d.setAttribute("data-theme", t);
             d.classList.add("js");
         })();
@@ -53,14 +58,15 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Damian Tomczyszyn",
-        "jobTitle": "Fullstack Developer (.NET / Python)",
+        "jobTitle": "Informatyk (Backend & Platform Engineer)",
+        "worksFor": { "@type": "GovernmentOrganization", "name": "Narodowy Fundusz Zdrowia", "alternateName": "NFZ" },
         "url": "https://damiantomczyszyn.github.io/About-Me/",
         "image": "https://damiantomczyszyn.github.io/About-Me/img/profile-480.jpg",
         "email": "mailto:Damian.Tomczyszyn@outlook.my",
         "address": { "@type": "PostalAddress", "addressLocality": "Warszawa", "addressCountry": "PL" },
         "alumniOf": { "@type": "CollegeOrUniversity", "name": "Uniwersytet Marii Curie-Skłodowskiej w Lublinie", "alternateName": "Maria Curie-Skłodowska University" },
         "knowsLanguage": ["pl", "en"],
-        "knowsAbout": ["C#", ".NET", "Python", "JavaScript", "PostgreSQL", "Linux", "Docker", "Proxmox VE", "Active Directory"],
+        "knowsAbout": ["C#", ".NET", "Python", "JavaScript", "SQL", "PostgreSQL", "Linux", "Docker", "Proxmox VE", "Active Directory"],
         "sameAs": [
             "https://www.linkedin.com/in/tomczyszyn/",
             "https://github.com/damiantomczyszyn",
@@ -70,7 +76,7 @@
     </script>
 </head>
 <body>
-    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <svg class="sprite" aria-hidden="true" focusable="false">
         <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
         <symbol id="i-gitlab" viewBox="0 0 24 24"><path d="m23.6 9.593-.033-.086L20.3.98a.851.851 0 0 0-.336-.405.875.875 0 0 0-1 .054.875.875 0 0 0-.29.44L16.47 7.818H7.537L5.333 1.07a.857.857 0 0 0-.29-.441.875.875 0 0 0-1-.054.859.859 0 0 0-.336.405L.433 9.502l-.032.086a6.066 6.066 0 0 0 2.012 7.01l.01.009.03.021 4.977 3.727 2.462 1.863 1.5 1.132a1.008 1.008 0 0 0 1.22 0l1.499-1.132 2.461-1.863 5.006-3.75.013-.01a6.068 6.068 0 0 0 2.01-7.002z"/></symbol>
         <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
@@ -80,10 +86,10 @@
         <symbol id="i-briefcase" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
         <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
         <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
-        <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
         <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
         <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
         <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+        <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
         <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol>
         <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
         <symbol id="i-server" viewBox="0 0 24 24"><rect width="20" height="8" x="2" y="2" rx="2"/><rect width="20" height="8" x="2" y="14" rx="2"/><path d="M6 6h.01M6 18h.01"/></symbol>
@@ -98,14 +104,14 @@
 
     <header class="site-header">
         <div class="container site-header__inner">
-            <a class="brand" href="#top" aria-label="Damian Tomczyszyn">
+            <a class="brand" href="#top" aria-label="Damian Tomczyszyn, początek strony" data-label-pl="Damian Tomczyszyn, początek strony" data-label-en="Damian Tomczyszyn, back to top">
                 <span class="brand__mark" aria-hidden="true">DT</span>
-                <span class="brand__name">Damian Tomczyszyn</span>
+                <span class="brand__name" aria-hidden="true">Damian Tomczyszyn</span>
             </a>
 
-            <nav class="nav" id="site-nav" data-label-pl="Nawigacja główna" data-label-en="Main navigation" aria-label="Nawigacja główna">
+            <nav class="nav" id="site-nav" aria-label="Nawigacja główna" data-label-pl="Nawigacja główna" data-label-en="Main navigation">
                 <ul class="nav__list">
-                    <li><a class="nav__link" href="#o-mnie"><span lang="pl">O mnie</span><span lang="en">About</span></a></li>
+                    <li><a class="nav__link" href="#o-mnie"><span lang="pl">O&nbsp;mnie</span><span lang="en">About</span></a></li>
                     <li><a class="nav__link" href="#doswiadczenie"><span lang="pl">Doświadczenie</span><span lang="en">Experience</span></a></li>
                     <li><a class="nav__link" href="#projekty"><span lang="pl">Projekty</span><span lang="en">Projects</span></a></li>
                     <li><a class="nav__link" href="#umiejetnosci"><span lang="pl">Umiejętności</span><span lang="en">Skills</span></a></li>
@@ -114,15 +120,21 @@
             </nav>
 
             <div class="header-tools">
-                <div class="lang-switch" role="group" data-label-pl="Język strony" data-label-en="Page language" aria-label="Język strony">
+                <a class="btn btn--primary header-cv" href="docs/Damian_Tomczyszyn_CV_Uniwersalne.pdf" download="Damian_Tomczyszyn_CV.pdf"
+                   aria-label="Pobierz CV (PDF)" data-label-pl="Pobierz CV (PDF)" data-label-en="Download CV (PDF, in Polish)">
+                    <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>CV
+                </a>
+                <div class="lang-switch" role="group" aria-label="Język strony" data-label-pl="Język strony" data-label-en="Page language">
                     <button type="button" data-set-lang="pl" aria-pressed="true" title="Polski">PL</button>
                     <button type="button" data-set-lang="en" aria-pressed="false" title="English">EN</button>
                 </div>
-                <button type="button" class="icon-button theme-toggle" data-theme-toggle data-label-pl="Przełącz jasny / ciemny motyw" data-label-en="Toggle light / dark theme" aria-label="Przełącz jasny / ciemny motyw">
+                <button type="button" class="icon-button theme-toggle" data-theme-toggle aria-pressed="false"
+                        aria-label="Ciemny motyw" data-label-pl="Ciemny motyw" data-label-en="Dark theme">
                     <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
                     <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
                 </button>
-                <button type="button" class="icon-button menu-toggle" data-menu-toggle aria-controls="site-nav" aria-expanded="false" data-label-pl="Menu" data-label-en="Menu" aria-label="Menu">
+                <button type="button" class="icon-button menu-toggle" data-menu-toggle aria-controls="site-nav" aria-expanded="false"
+                        aria-label="Menu" data-label-pl="Menu" data-label-en="Menu">
                     <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
                 </button>
             </div>
@@ -134,40 +146,35 @@
         <section class="hero" id="top" aria-labelledby="hero-name">
             <div class="container hero__grid">
                 <div class="hero__text">
-                    <p class="hero__role">Fullstack Developer · .NET / Python</p>
+                    <p class="hero__role">Backend Developer · .NET / Python</p>
                     <h1 class="hero__name" id="hero-name">Damian Tomczyszyn</h1>
                     <p class="hero__tagline">
-                        <span lang="pl">Tworzę aplikacje w&nbsp;.NET i&nbsp;Pythonie, automatyzuję pracę z&nbsp;danymi i&nbsp;rozumiem infrastrukturę, na której to wszystko działa.</span>
-                        <span lang="en">I build .NET and Python applications, automate data work and understand the infrastructure it all runs on.</span>
-                    </p>
-                    <p class="hero__summary">
-                        <span lang="pl">W&nbsp;Narodowym Funduszu Zdrowia projektuję API w&nbsp;C# oraz interfejsy (Razor, JavaScript) dla systemów wewnętrznych, a&nbsp;w&nbsp;Pythonie piszę skrypty integrujące dane z&nbsp;PostgreSQL, Oracle i&nbsp;DB2. Po godzinach rozwijam homelab (Proxmox, Active Directory) i&nbsp;uczę się bezpieczeństwa IT.</span>
-                        <span lang="en">At Poland's National Health Fund (NFZ) I design C# APIs and Razor/JavaScript interfaces for internal systems, and write Python scripts that integrate data from PostgreSQL, Oracle and DB2. After hours I run a homelab (Proxmox, Active Directory) and study IT security.</span>
+                        <span lang="pl">Tworzę API i&nbsp;aplikacje wewnętrzne w&nbsp;C#/.NET, automatyzuję integrację danych w&nbsp;Pythonie i&nbsp;znam infrastrukturę, na której działają: Linuksa, Dockera, Active Directory.</span>
+                        <span lang="en">I build C#/.NET APIs and internal applications, automate data integration in Python, and know the infrastructure they run on: Linux, Docker and Active Directory.</span>
                     </p>
                     <ul class="hero__facts">
                         <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> <span lang="pl">Warszawa</span><span lang="en">Warsaw, Poland</span></li>
-                        <li><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg> <span lang="pl">NFZ, od 06.2025</span><span lang="en">NFZ, since 06/2025</span></li>
-                        <li><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg> <span lang="pl">mgr informatyki, UMCS</span><span lang="en">MSc Computer Science, UMCS</span></li>
+                        <li><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg> <span lang="pl">Narodowy Fundusz Zdrowia, od 06.2025</span><span lang="en">National Health Fund (NFZ), since June 2025</span></li>
+                        <li><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg> <span lang="pl">mgr informatyki, UMCS</span><span lang="en">MSc in Computer Science, UMCS</span></li>
                     </ul>
                     <div class="hero__actions">
-                        <a class="btn btn--primary" href="docs/Damian_Tomczyszyn_CV_Uniwersalne.pdf" download>
+                        <a class="btn btn--primary" href="docs/Damian_Tomczyszyn_CV_Uniwersalne.pdf" download="Damian_Tomczyszyn_CV.pdf">
                             <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
                             <span lang="pl">Pobierz CV <small>(PDF)</small></span>
-                            <span lang="en">Download CV <small>(PDF, Polish)</small></span>
+                            <span lang="en">Download CV <small>(PDF, in Polish)</small></span>
                         </a>
                         <a class="btn btn--ghost" href="#kontakt"><span lang="pl">Kontakt</span><span lang="en">Get in touch</span></a>
                         <div class="hero__social">
                             <a class="social-link" href="https://github.com/damiantomczyszyn" aria-label="GitHub"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-github"/></svg></a>
                             <a class="social-link" href="https://www.linkedin.com/in/tomczyszyn/" aria-label="LinkedIn"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
-                            <a class="social-link" href="https://gitlab.com/damiantomczyszyn" aria-label="GitLab"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-gitlab"/></svg></a>
                         </div>
                     </div>
                 </div>
                 <div class="hero__photo">
                     <picture>
-                        <source type="image/webp" srcset="img/profile-320.webp 320w, img/profile-480.webp 480w" sizes="(max-width: 720px) 148px, 300px">
-                        <img src="img/profile-480.jpg" srcset="img/profile-320.jpg 320w, img/profile-480.jpg 480w" sizes="(max-width: 720px) 148px, 300px"
-                             width="480" height="600" alt="Zdjęcie portretowe: Damian Tomczyszyn" data-alt-pl="Zdjęcie portretowe: Damian Tomczyszyn" data-alt-en="Portrait photo of Damian Tomczyszyn" fetchpriority="high">
+                        <source type="image/webp" srcset="img/profile-320.webp 320w, img/profile-480.webp 480w" sizes="(max-width: 720px) 96px, 300px">
+                        <img src="img/profile-480.jpg" srcset="img/profile-320.jpg 320w, img/profile-480.jpg 480w" sizes="(max-width: 720px) 96px, 300px"
+                             width="480" height="600" alt="Zdjęcie portretowe Damiana Tomczyszyna" data-alt-pl="Zdjęcie portretowe Damiana Tomczyszyna" data-alt-en="Portrait of Damian Tomczyszyn" fetchpriority="high">
                     </picture>
                 </div>
             </div>
@@ -177,38 +184,32 @@
         <section class="section section--alt" id="o-mnie" aria-labelledby="about-title">
             <div class="container">
                 <div class="section__head">
-                    <span class="eyebrow"><span lang="pl">O mnie</span><span lang="en">About</span></span>
+                    <p class="eyebrow"><span lang="pl">O&nbsp;mnie</span><span lang="en">About</span></p>
                     <h2 class="section__title" id="about-title">
                         <span lang="pl">Programista, który rozumie infrastrukturę</span>
-                        <span lang="en">A developer who understands the infrastructure</span>
+                        <span lang="en">A developer who understands infrastructure</span>
                     </h2>
                 </div>
                 <div class="about">
                     <div class="prose">
                         <p lang="pl">
-                            Jestem magistrem informatyki (UMCS, specjalność deweloperska). Od czerwca 2025&nbsp;r. pracuję jako informatyk w&nbsp;<strong>Narodowym Funduszu Zdrowia</strong>. W&nbsp;praktyce łączę rolę backend developera i&nbsp;inżyniera platformy: projektuję API w&nbsp;<strong>C# (.NET)</strong> i&nbsp;interfejsy dla systemów wewnętrznych, zarządzam konfiguracją i&nbsp;wdrażam poprawki na serwerach testowych z&nbsp;<strong>Linuksem (RedHat)</strong>, a&nbsp;przyczyn błędów szukam w&nbsp;logach.
+                            Jestem magistrem informatyki (UMCS, specjalność deweloperska). W&nbsp;<strong>Narodowym Funduszu Zdrowia</strong> łączę programowanie backendu z&nbsp;pracą przy infrastrukturze: piszę kod w&nbsp;<strong>C# (.NET)</strong> i&nbsp;<strong>Pythonie</strong>, zarządzam konfiguracją i&nbsp;wdrażam poprawki na serwerach testowych z&nbsp;Linuksem, a&nbsp;przyczyn błędów szukam w&nbsp;logach. Zakres obowiązków opisuję w&nbsp;sekcji <a href="#doswiadczenie">Doświadczenie</a>.
                         </p>
                         <p lang="en">
-                            I hold an MSc in Computer Science (UMCS, software development track). Since June 2025 I've worked as an IT specialist at Poland's <strong>National Health Fund (NFZ)</strong>. In practice the role combines backend development and platform work: I design <strong>C# (.NET)</strong> APIs and interfaces for internal systems, manage configuration and deploy fixes on <strong>Linux (RedHat)</strong> test servers, and trace bugs through the logs.
+                            I hold an MSc in Computer Science (UMCS, software development track). At Poland’s <strong>National Health Fund (NFZ)</strong> my work combines backend development with infrastructure: I write <strong>C# (.NET)</strong> and <strong>Python</strong> code, manage configuration and deploy fixes on Linux test servers, and dig through logs to find the root cause of bugs. My responsibilities are listed under <a href="#doswiadczenie">Experience</a>.
                         </p>
                         <p lang="pl">
-                            Dużą część pracy stanowią dane: piszę skrypty w&nbsp;<strong>Pythonie</strong> (Pandas, SQLAlchemy), które łączą i&nbsp;weryfikują dane z&nbsp;PostgreSQL, Oracle i&nbsp;DB2, oraz automatyzuję zadania bazodanowe w&nbsp;pgAgent. Dzięki temu powtarzalne, ręczne procesy przestają być ręczne.
+                            Po pracy utrzymuję <strong>homelab</strong>: domenę Active Directory na Windows Server, działającą w&nbsp;maszynach wirtualnych na Proxmox VE i&nbsp;połączoną siecią Tailscale. Wiedzę z&nbsp;bezpieczeństwa IT poszerzam na szkoleniach Securitum (sekurak). Na studiach i&nbsp;w&nbsp;projektach własnych pisałem też w&nbsp;Javie (Spring Boot) oraz w&nbsp;C/C++ dla mikrokontrolerów, co widać w&nbsp;projektach poniżej.
                         </p>
                         <p lang="en">
-                            A large part of the job is data: I write <strong>Python</strong> scripts (Pandas, SQLAlchemy) that combine and validate data from PostgreSQL, Oracle and DB2, and I automate database jobs with pgAgent, so that repetitive manual processes stop being manual.
-                        </p>
-                        <p lang="pl">
-                            Po pracy utrzymuję <strong>homelab</strong>: domenę Active Directory na Windows Server, uruchomioną na Proxmox VE i&nbsp;spiętą siecią Tailscale. Bezpieczeństwo IT rozwijam na szkoleniach Securitum (sekurak). Wcześniej programowałem w&nbsp;Javie (Spring Boot) oraz w&nbsp;C/C++ dla mikrokontrolerów, co widać w&nbsp;projektach poniżej.
-                        </p>
-                        <p lang="en">
-                            Outside work I run a <strong>homelab</strong>: an Active Directory domain on Windows Server, hosted on Proxmox VE and connected with Tailscale. I build my security skills through Securitum (sekurak) trainings. Before .NET I wrote Java (Spring Boot) and C/C++ for microcontrollers, which you can see in the projects below.
+                            Outside work I run a <strong>homelab</strong>: an Active Directory domain on Windows Server, running in VMs on Proxmox VE and connected with Tailscale. I’m building my security knowledge through Securitum (sekurak) training courses. At university and in personal projects I also wrote Java (Spring Boot) and C/C++ for microcontrollers, as the projects below show.
                         </p>
                     </div>
                     <ul class="focus-list">
                         <li class="focus-item">
                             <span class="focus-item__icon"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span>
                             <div>
-                                <h3><span lang="pl">Backend i&nbsp;fullstack</span><span lang="en">Backend &amp; fullstack</span></h3>
+                                <h3><span lang="pl">Backend i&nbsp;aplikacje wewnętrzne</span><span lang="en">Backend &amp; internal apps</span></h3>
                                 <p>C# / .NET · API · Razor · JavaScript</p>
                             </div>
                         </li>
@@ -223,15 +224,15 @@
                             <span class="focus-item__icon"><svg class="icon" aria-hidden="true"><use href="#i-server"/></svg></span>
                             <div>
                                 <h3><span lang="pl">Infrastruktura</span><span lang="en">Infrastructure</span></h3>
-                                <p>Linux (RedHat) · Docker · Proxmox VE · Windows Server · AD</p>
+                                <p>Linux (Red Hat) · Docker · Proxmox VE · Windows Server · AD</p>
                             </div>
                         </li>
                         <li class="focus-item">
                             <span class="focus-item__icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
                             <div>
                                 <h3><span lang="pl">Bezpieczeństwo</span><span lang="en">Security</span></h3>
-                                <p lang="pl">Bezpieczeństwo AD i&nbsp;aplikacji WWW · szkolenia Securitum / sekurak</p>
-                                <p lang="en">AD and web application security · Securitum / sekurak trainings</p>
+                                <p lang="pl">Bezpieczeństwo AD i&nbsp;aplikacji webowych · szkolenia Securitum / sekurak</p>
+                                <p lang="en">AD and web application security · Securitum / sekurak training</p>
                             </div>
                         </li>
                     </ul>
@@ -243,45 +244,46 @@
         <section class="section" id="doswiadczenie" aria-labelledby="exp-title">
             <div class="container">
                 <div class="section__head">
-                    <span class="eyebrow"><span lang="pl">Doświadczenie</span><span lang="en">Experience</span></span>
+                    <p class="eyebrow"><span lang="pl">Doświadczenie</span><span lang="en">Experience</span></p>
                     <h2 class="section__title" id="exp-title">
                         <span lang="pl">Praca i&nbsp;wykształcenie</span>
                         <span lang="en">Work &amp; education</span>
                     </h2>
                 </div>
 
+                <h3 class="subhead subhead--first"><span lang="pl">Doświadczenie zawodowe</span><span lang="en">Work experience</span></h3>
                 <ol class="timeline" role="list">
                     <li class="entry">
                         <div class="entry__when">
                             <span lang="pl">06.2025 – obecnie</span><span lang="en">Jun 2025 – present</span><br>
-                            <span class="now"><span lang="pl">Obecnie</span><span lang="en">Current</span></span>
+                            <span class="now"><span lang="pl">Obecna praca</span><span lang="en">Current role</span></span>
                         </div>
                         <div class="entry__body">
-                            <h3 class="entry__title"><span lang="pl">Informatyk (Backend &amp; Platform Engineer)</span><span lang="en">IT Specialist (Backend &amp; Platform Engineer)</span></h3>
-                            <p class="entry__org"><span lang="pl">Narodowy Fundusz Zdrowia (NFZ) · Warszawa</span><span lang="en">National Health Fund of Poland (NFZ) · Warsaw</span></p>
+                            <h4 class="entry__title"><span lang="pl">Informatyk (Backend &amp; Platform Engineer)</span><span lang="en">IT Specialist (Backend &amp; Platform Engineer)</span></h4>
+                            <p class="entry__org"><span lang="pl">Narodowy Fundusz Zdrowia (NFZ) · Warszawa</span><span lang="en">Poland’s National Health Fund (NFZ) · Warsaw</span></p>
                             <ul class="entry__points" lang="pl">
                                 <li>Projektowanie API w&nbsp;C# (.NET) oraz budowa interfejsów (widoki Razor, JavaScript) dla systemów i&nbsp;aplikacji wewnętrznych.</li>
-                                <li>Zarządzanie konfiguracją i&nbsp;wdrażanie poprawek na serwerach testowych (Linux RedHat).</li>
-                                <li>Skrypty w&nbsp;Pythonie (Pandas, SQLAlchemy) do przetwarzania i&nbsp;integracji danych z&nbsp;PostgreSQL, Oracle i&nbsp;DB2, eliminujące powtarzalne procesy manualne.</li>
+                                <li>Zarządzanie konfiguracją i&nbsp;wdrażanie poprawek na serwerach testowych (Linux Red Hat).</li>
+                                <li>Tworzenie skryptów w&nbsp;Pythonie (Pandas, SQLAlchemy) do przetwarzania i&nbsp;integracji danych z&nbsp;PostgreSQL, Oracle i&nbsp;DB2, eliminujących powtarzalne procesy ręczne.</li>
                                 <li>Diagnozowanie błędów na podstawie logów, analiza problemów oraz weryfikacja spójności danych między źródłami.</li>
-                                <li>Automatyzacja procesów bazodanowych w&nbsp;pgAgent oraz konteneryzacja usług testowych (Docker).</li>
+                                <li>Automatyzacja procesów bazodanowych przy użyciu pgAgenta oraz konteneryzacja usług testowych (Docker).</li>
                             </ul>
                             <ul class="entry__points" lang="en">
                                 <li>Designing C# (.NET) APIs and building interfaces (Razor views, JavaScript) for internal systems and applications.</li>
-                                <li>Managing configuration and deploying fixes on test servers (Linux RedHat).</li>
-                                <li>Python scripts (Pandas, SQLAlchemy) that process and integrate data from PostgreSQL, Oracle and DB2, replacing repetitive manual work.</li>
+                                <li>Managing configuration and deploying fixes on test servers (Red Hat Linux).</li>
+                                <li>Writing Python scripts (Pandas, SQLAlchemy) that process and integrate data from PostgreSQL, Oracle and DB2, replacing repetitive manual work.</li>
                                 <li>Diagnosing bugs from logs, analysing issues and validating data consistency across sources.</li>
                                 <li>Automating database jobs with pgAgent and running test services in Docker containers.</li>
                             </ul>
                             <ul class="tag-list" aria-label="Technologie" data-label-pl="Technologie" data-label-en="Technologies">
-                                <li class="tag">C#</li><li class="tag">.NET</li><li class="tag">Razor</li><li class="tag">JavaScript</li><li class="tag">Python</li><li class="tag">Pandas</li><li class="tag">SQLAlchemy</li><li class="tag">PostgreSQL</li><li class="tag">Oracle</li><li class="tag">DB2</li><li class="tag">pgAgent</li><li class="tag">Docker</li><li class="tag">RedHat</li>
+                                <li class="tag">C#</li><li class="tag">.NET</li><li class="tag">Razor</li><li class="tag">JavaScript</li><li class="tag">Python</li><li class="tag">Pandas</li><li class="tag">SQLAlchemy</li><li class="tag">PostgreSQL</li><li class="tag">Oracle</li><li class="tag">DB2</li><li class="tag">pgAgent</li><li class="tag">Docker</li><li class="tag">Red Hat</li>
                             </ul>
                         </div>
                     </li>
                     <li class="entry">
-                        <div class="entry__when">2020 – 2021</div>
+                        <div class="entry__when">2020–2021</div>
                         <div class="entry__body">
-                            <h3 class="entry__title"><span lang="pl">Praktyki</span><span lang="en">Internship</span></h3>
+                            <h4 class="entry__title"><span lang="pl">Praktyki</span><span lang="en">Internship</span></h4>
                             <p class="entry__org"><a href="https://jbmultimedia.pl/">JB Multimedia</a> · Biała Podlaska</p>
                             <p class="entry__note">
                                 <span lang="pl">Firma IT zajmująca się sprzedażą sprzętu komputerowego oraz usługami informatycznymi dla firm i&nbsp;instytucji.</span>
@@ -294,12 +296,12 @@
                 <h3 class="subhead"><span lang="pl">Wykształcenie</span><span lang="en">Education</span></h3>
                 <ol class="timeline" role="list">
                     <li class="entry">
-                        <div class="entry__when">2022 – 2024</div>
+                        <div class="entry__when">2022–2024</div>
                         <div class="entry__body">
-                            <h3 class="entry__title">
-                                <span lang="pl">Informatyka, studia II stopnia (magister)</span>
+                            <h4 class="entry__title">
+                                <span lang="pl">Informatyka, studia II&nbsp;stopnia (magisterskie)</span>
                                 <span lang="en">MSc in Computer Science</span>
-                            </h3>
+                            </h4>
                             <p class="entry__org">
                                 <span lang="pl">Uniwersytet Marii Curie-Skłodowskiej w&nbsp;Lublinie · Wydział Matematyki, Fizyki i&nbsp;Informatyki</span>
                                 <span lang="en">Maria Curie-Skłodowska University (UMCS), Lublin · Faculty of Mathematics, Physics and Computer Science</span>
@@ -311,19 +313,19 @@
                         </div>
                     </li>
                     <li class="entry">
-                        <div class="entry__when">2019 – 2022</div>
+                        <div class="entry__when">2019–2022</div>
                         <div class="entry__body">
-                            <h3 class="entry__title">
-                                <span lang="pl">Informatyka, studia I stopnia (licencjat)</span>
+                            <h4 class="entry__title">
+                                <span lang="pl">Informatyka, studia I&nbsp;stopnia (licencjackie)</span>
                                 <span lang="en">BSc in Computer Science</span>
-                            </h3>
+                            </h4>
                             <p class="entry__org">
                                 <span lang="pl">Uniwersytet Marii Curie-Skłodowskiej w&nbsp;Lublinie</span>
                                 <span lang="en">Maria Curie-Skłodowska University (UMCS), Lublin</span>
                             </p>
                             <p class="entry__note">
                                 <span lang="pl">Praca licencjacka: „Zastosowanie sztucznych sieci neuronowych do rozpoznawania pisma” (<a href="#projekt-ocr">opis projektu</a>).</span>
-                                <span lang="en">Thesis: “Applying artificial neural networks to text recognition” (<a href="#projekt-ocr">see the project</a>).</span>
+                                <span lang="en">Thesis: “Application of artificial neural networks for text recognition” (<a href="#projekt-ocr">see the project</a>).</span>
                             </p>
                         </div>
                     </li>
@@ -335,43 +337,76 @@
         <section class="section section--alt" id="projekty" aria-labelledby="projects-title">
             <div class="container">
                 <div class="section__head">
-                    <span class="eyebrow"><span lang="pl">Projekty</span><span lang="en">Projects</span></span>
+                    <p class="eyebrow"><span lang="pl">Projekty</span><span lang="en">Projects</span></p>
                     <h2 class="section__title" id="projects-title">
-                        <span lang="pl">Wybrane projekty</span>
-                        <span lang="en">Selected projects</span>
+                        <span lang="pl">Co buduję poza pracą</span>
+                        <span lang="en">What I build outside work</span>
                     </h2>
                     <p class="section__lead">
-                        <span lang="pl">Projekty spoza pracy: homelab, prace dyplomowe i&nbsp;rzeczy zbudowane od zera, od sieci neuronowych po sterowniki na mikrokontrolerach.</span>
-                        <span lang="en">Work outside the day job: my homelab, university theses and things built from scratch, from neural networks to microcontroller firmware.</span>
+                        <span lang="pl">Homelab, projekty ze studiów i&nbsp;własne konstrukcje – od sieci neuronowych po sterowniki na mikrokontrolerach.</span>
+                        <span lang="en">My homelab, university projects and hands-on builds, from neural networks to microcontroller firmware.</span>
                     </p>
                 </div>
 
+                <h3 class="subhead subhead--first"><span lang="pl">Wybrane projekty</span><span lang="en">Selected projects</span></h3>
                 <ul class="projects projects--featured" role="list">
                     <li class="project project--featured">
                         <div class="project__meta">
                             <span class="status status--done"><span lang="pl">Działa</span><span lang="en">Running</span></span>
                             <span>Homelab</span>
                         </div>
-                        <h3 class="project__title"><span lang="pl">Domena Active Directory na Proxmox VE</span><span lang="en">Active Directory domain on Proxmox VE</span></h3>
+                        <h4 class="project__title"><span lang="pl">Domena Active Directory na Proxmox VE</span><span lang="en">Active Directory domain on Proxmox VE</span></h4>
                         <p class="project__desc">
-                            <span lang="pl">Domowe laboratorium, w&nbsp;którym ćwiczę administrację i&nbsp;bezpieczeństwo środowisk Windows.</span>
-                            <span lang="en">A home lab where I practise administering and securing Windows environments.</span>
+                            <span lang="pl">Domowe laboratorium, w&nbsp;którym ćwiczę administrowanie środowiskami Windows i&nbsp;ich zabezpieczanie.</span>
+                            <span lang="en">A homelab where I practise administering and securing Windows environments.</span>
                         </p>
                         <ul class="project__points" lang="pl">
-                            <li>Domena Active Directory na Windows Server 2022/2025, uruchomiona na wirtualizacji Proxmox VE.</li>
-                            <li>Centralne zarządzanie logowaniem, zasadami grupy (GPO) i&nbsp;uprawnieniami (RBAC).</li>
+                            <li>Domena Active Directory na Windows Server 2022/2025, działająca w&nbsp;maszynach wirtualnych na Proxmox VE.</li>
+                            <li>Centralne zarządzanie logowaniem, zasady grupy (GPO) i&nbsp;uprawnienia oparte na rolach (RBAC).</li>
                             <li>Rozproszone urządzenia połączone siecią mesh VPN (Tailscale).</li>
-                            <li><strong>W&nbsp;trakcie:</strong> automatyczne stawianie laboratorium <a href="https://github.com/Orange-Cyberdefense/GOAD">GOAD</a> (Game of Active Directory) przy użyciu Packera, Terraforma i&nbsp;Ansible.</li>
+                            <li><strong>W&nbsp;planach:</strong> automatyczna budowa laboratorium <a href="https://github.com/Orange-Cyberdefense/GOAD">GOAD</a> (Game of Active Directory) na Proxmoxie przy użyciu Packera, Terraforma i&nbsp;Ansible.</li>
                         </ul>
                         <ul class="project__points" lang="en">
-                            <li>Active Directory domain on Windows Server 2022/2025, running on Proxmox VE.</li>
-                            <li>Centralised sign-in, Group Policy (GPO) and role-based permissions (RBAC).</li>
+                            <li>Active Directory domain on Windows Server 2022/2025, running in VMs on Proxmox VE.</li>
+                            <li>Centralised sign-in management, Group Policy Objects (GPOs) and role-based access control (RBAC).</li>
                             <li>Distributed devices connected through a Tailscale mesh VPN.</li>
-                            <li><strong>In progress:</strong> provisioning the <a href="https://github.com/Orange-Cyberdefense/GOAD">GOAD</a> (Game of Active Directory) lab automatically with Packer, Terraform and Ansible.</li>
+                            <li><strong>Roadmap:</strong> automating the build of the <a href="https://github.com/Orange-Cyberdefense/GOAD">GOAD</a> (Game of Active Directory) lab on Proxmox with Packer, Terraform and Ansible.</li>
                         </ul>
-                        <ul class="tag-list" data-label-pl="Technologie" data-label-en="Technologies" aria-label="Technologie">
+                        <ul class="tag-list" aria-label="Technologie" data-label-pl="Technologie" data-label-en="Technologies">
                             <li class="tag">Proxmox VE</li><li class="tag">Windows Server</li><li class="tag">Active Directory</li><li class="tag">GPO</li><li class="tag">Tailscale</li>
                         </ul>
+                    </li>
+
+                    <li class="project project--featured">
+                        <div class="project__meta">
+                            <span class="status status--edu"><span lang="pl">Projekt zespołowy</span><span lang="en">Team project</span></span>
+                            <span>2022–2023</span>
+                        </div>
+                        <h4 class="project__title"><span lang="pl">API serwisu społecznościowego w&nbsp;.NET</span><span lang="en">Social network API in .NET</span></h4>
+                        <p class="project__desc">
+                            <span lang="pl">Backend (REST API) stworzony w&nbsp;czteroosobowym zespole studenckim: dwie osoby backend, dwie frontend. Moja rola: backend developer i&nbsp;tester.</span>
+                            <span lang="en">A REST API backend from a four-person student team: two on the backend, two on the frontend. My role: backend developer and tester.</span>
+                        </p>
+                        <ul class="project__points" lang="pl">
+                            <li>ASP.NET Core 6: kontrolery i&nbsp;serwisy dla postów, komentarzy, grup i&nbsp;użytkowników, mapowanie DTO (AutoMapper) i&nbsp;stronicowanie wyników.</li>
+                            <li>Dostęp do MySQL przez EF Core, schemat z&nbsp;16&nbsp;tabel (znajomi, grupy, głosy, konwersacje).</li>
+                            <li>Wieloetapowy Dockerfile, docker-compose ze sprawdzaniem gotowości bazy (healthcheck) i&nbsp;pipeline Bitbucket wdrażający na Heroku.</li>
+                        </ul>
+                        <ul class="project__points" lang="en">
+                            <li>ASP.NET Core 6: controllers and services for posts, comments, groups and users, DTO mapping (AutoMapper) and pagination.</li>
+                            <li>MySQL access through EF Core, with a 16-table schema (friends, groups, votes, conversations).</li>
+                            <li>Multi-stage Dockerfile, docker-compose with a database healthcheck, and a Bitbucket pipeline deploying to Heroku.</li>
+                        </ul>
+                        <ul class="tag-list" aria-label="Technologie" data-label-pl="Technologie" data-label-en="Technologies">
+                            <li class="tag">C#</li><li class="tag">ASP.NET Core</li><li class="tag">EF Core</li><li class="tag">MySQL</li><li class="tag">Docker</li><li class="tag">CI/CD</li>
+                        </ul>
+                        <div class="project__links">
+                            <a class="project__link" href="https://github.com/damiantomczyszyn/Social-network-backend"
+                               aria-label="API serwisu społecznościowego – kod na GitHubie" data-label-pl="API serwisu społecznościowego – kod na GitHubie" data-label-en="Social network API – code on GitHub">
+                                <svg class="icon icon--fill" aria-hidden="true"><use href="#i-github"/></svg>
+                                <span lang="pl">Kod na GitHubie</span><span lang="en">Code on GitHub</span>
+                            </a>
+                        </div>
                     </li>
 
                     <li class="project project--featured" id="projekt-ocr">
@@ -379,28 +414,29 @@
                             <span class="status status--edu"><span lang="pl">Praca licencjacka</span><span lang="en">BSc thesis</span></span>
                             <span>UMCS · 2022</span>
                         </div>
-                        <h3 class="project__title"><span lang="pl">OCR oparty na sieciach neuronowych</span><span lang="en">Neural-network OCR engine</span></h3>
+                        <h4 class="project__title"><span lang="pl">OCR oparty na sieciach neuronowych</span><span lang="en">Neural-network OCR engine</span></h4>
                         <p class="project__desc">
-                            <span lang="pl">Silnik rozpoznawania tekstu drukowanego w&nbsp;Pythonie, złożony z&nbsp;trzech sieci neuronowych.</span>
+                            <span lang="pl">Napisany w&nbsp;Pythonie silnik rozpoznawania tekstu drukowanego, złożony z&nbsp;trzech sieci neuronowych.</span>
                             <span lang="en">A Python engine for recognising printed text, built from three neural networks.</span>
                         </p>
                         <ul class="project__points" lang="pl">
-                            <li>Dwie sieci U-Net dzielą stronę na linie i&nbsp;wyrazy, a&nbsp;sieć CRNN (CNN + dwukierunkowy LSTM, funkcja straty CTC) rozpoznaje słowa. Segmentacja bazuje na otwartej implementacji cytowanej w&nbsp;pracy.</li>
-                            <li>Trening CRNN na 4&nbsp;mln syntetycznych obrazów słów, z&nbsp;własnym generatorem wsadów i&nbsp;rozbudowanym generatorem danych.</li>
-                            <li>Porównanie z&nbsp;Tesseract 5.1 na ręcznie opisanych zbiorach testowych (teksty z&nbsp;PDF i&nbsp;skany) oraz analiza źródeł błędów.</li>
+                            <li>Dwie sieci U-Net dzielą stronę na wiersze i&nbsp;wyrazy, a&nbsp;sieć CRNN (CNN + dwukierunkowy LSTM, funkcja straty CTC) rozpoznaje słowa.</li>
+                            <li>Wszystkie trzy sieci wytrenowałem sam, CRNN na 4&nbsp;mln syntetycznych obrazów słów z&nbsp;własnym generatorem wsadów. Architekturę U-Net, skrypty łączące etapy i&nbsp;generator danych zaczerpnąłem z&nbsp;otwartych implementacji cytowanych w&nbsp;pracy.</li>
+                            <li>Porównanie z&nbsp;Tesseractem 5.1 na ręcznie oznaczonych zbiorach testowych (tekst z&nbsp;plików PDF i&nbsp;skany książki). Tesseract wypadł lepiej, a&nbsp;praca analizuje przyczyny, głównie błędy segmentacji.</li>
                         </ul>
                         <ul class="project__points" lang="en">
-                            <li>Two U-Nets split the page into lines and words, and a CRNN (CNN + bidirectional LSTM, CTC loss) recognises the words. The segmentation builds on an open-source implementation cited in the thesis.</li>
-                            <li>The CRNN was trained on 4 million synthetic word images, using my own batch generator and an extended data generator.</li>
-                            <li>Benchmarked against Tesseract 5.1 on hand-annotated test sets (PDF text and scans), with an analysis of error sources.</li>
+                            <li>Two U-Nets split the page into lines and words, and a CRNN (CNN + bidirectional LSTM, CTC loss) recognises the words.</li>
+                            <li>I trained all three networks myself, the CRNN on 4 million synthetic word images with my own batch generator. The U-Net architecture, the scripts chaining the stages and the data generator come from open-source implementations cited in the thesis.</li>
+                            <li>Benchmarked against Tesseract 5.1 on hand-annotated test sets (PDF text and book scans). Tesseract came out ahead, and the thesis analyses why, mainly segmentation errors.</li>
                         </ul>
-                        <ul class="tag-list" data-label-pl="Technologie" data-label-en="Technologies" aria-label="Technologie">
+                        <ul class="tag-list" aria-label="Technologie" data-label-pl="Technologie" data-label-en="Technologies">
                             <li class="tag">Python</li><li class="tag">TensorFlow</li><li class="tag">Keras</li><li class="tag">OpenCV</li><li class="tag">Jupyter</li>
                         </ul>
                         <div class="project__links">
-                            <a class="project__link" href="https://github.com/damiantomczyszyn/Praca-licencjacka-OCR-CRNN">
+                            <a class="project__link" href="https://github.com/damiantomczyszyn/Praca-licencjacka-OCR-CRNN"
+                               aria-label="OCR – kod i praca licencjacka na GitHubie" data-label-pl="OCR – kod i praca licencjacka na GitHubie" data-label-en="OCR – code and thesis (in Polish) on GitHub">
                                 <svg class="icon icon--fill" aria-hidden="true"><use href="#i-github"/></svg>
-                                <span lang="pl">Kod i&nbsp;praca (PDF)</span><span lang="en">Code &amp; thesis (PDF)</span>
+                                <span lang="pl">Kod i&nbsp;praca (PDF)</span><span lang="en">Code &amp; thesis (PDF, in Polish)</span>
                             </a>
                         </div>
                     </li>
@@ -408,107 +444,81 @@
                     <li class="project project--featured">
                         <div class="project__meta">
                             <span class="status status--wip"><span lang="pl">Prototyp</span><span lang="en">Prototype</span></span>
-                            <span>2023 – 2024</span>
+                            <span>2023–2024</span>
                         </div>
-                        <h3 class="project__title"><span lang="pl">Nawadnianie sterowane prognozą pogody</span><span lang="en">Forecast-driven irrigation system</span></h3>
+                        <h4 class="project__title"><span lang="pl">Nawadnianie sterowane prognozą pogody</span><span lang="en">Forecast-driven irrigation</span></h4>
                         <p class="project__desc">
-                            <span lang="pl">Sterownik na ESP8266, który codziennie o&nbsp;22:00 decyduje, czy uruchomić podlewanie.</span>
-                            <span lang="en">An ESP8266 controller that decides every evening at 22:00 whether to start watering.</span>
+                            <span lang="pl">Prototyp sterownika na ESP8266, który codziennie o&nbsp;22:00 ocenia, czy podlewać.</span>
+                            <span lang="en">A prototype ESP8266 controller that decides every evening at 22:00 whether to water.</span>
                         </p>
                         <ul class="project__points" lang="pl">
-                            <li>Łączy prognozę z&nbsp;API Visual Crossing z&nbsp;odczytami własnej stacji pogodowej (BME280, DHT22, czujnik deszczu) udostępnianymi po HTTP w&nbsp;JSON.</li>
-                            <li>Decyzję podejmuje ważone drzewo decyzyjne oparte na 9&nbsp;kryteriach, m.in. opadach, wilgotności gleby i&nbsp;prawdopodobieństwie deszczu.</li>
-                            <li>Algorytm przetestowany na 151&nbsp;dniach historycznych danych pogodowych, podawanych przez lokalny serwer w&nbsp;Pythonie i&nbsp;ocenianych skryptem.</li>
+                            <li>Ważone drzewo decyzyjne (9&nbsp;kryteriów, m.in. opady, wilgotność gleby i&nbsp;prognoza deszczu) wylicza prawdopodobieństwo podlewania na podstawie prognozy z&nbsp;API Visual Crossing.</li>
+                            <li>Osobny węzeł pomiarowy na ESP8266 (BME280, DHT22, czujnik deszczu) udostępnia odczyty przez HTTP w&nbsp;formacie JSON. Połączenie go ze sterownikiem na żywo nie jest jeszcze ukończone.</li>
+                            <li>Algorytm przetestowałem offline na 151&nbsp;dniach historycznych danych pogodowych, podawanych przez lokalny serwer w&nbsp;Pythonie. Trafność decyzji sprawdzał osobny skrypt.</li>
                         </ul>
                         <ul class="project__points" lang="en">
-                            <li>Combines the Visual Crossing forecast API with readings from my own weather station (BME280, DHT22, rain sensor), served over HTTP as JSON.</li>
-                            <li>A weighted decision tree with 9 criteria, such as rainfall, soil moisture and rain probability, makes the call.</li>
-                            <li>The algorithm was tested on 151 days of historical weather data, served by a local Python server and scored by a script.</li>
+                            <li>A weighted decision tree with 9 criteria, including rainfall, soil moisture and the chance of rain, turns the Visual Crossing forecast into a watering probability.</li>
+                            <li>A separate ESP8266 sensor node (BME280, DHT22, rain sensor) serves its readings over HTTP as JSON. Wiring it into the controller live is not finished yet.</li>
+                            <li>I tested the algorithm offline on 151 days of historical weather data, fed in by a local Python server, and a separate script scored each decision.</li>
                         </ul>
-                        <ul class="tag-list" data-label-pl="Technologie" data-label-en="Technologies" aria-label="Technologie">
+                        <ul class="tag-list" aria-label="Technologie" data-label-pl="Technologie" data-label-en="Technologies">
                             <li class="tag">C++</li><li class="tag">ESP8266</li><li class="tag">PlatformIO</li><li class="tag">HTTP / JSON</li><li class="tag">Python</li>
                         </ul>
                         <div class="project__links">
-                            <a class="project__link" href="https://github.com/damiantomczyszyn/Irrigation-System">
+                            <a class="project__link" href="https://github.com/damiantomczyszyn/Irrigation-System"
+                               aria-label="Nawadnianie – kod sterownika na GitHubie" data-label-pl="Nawadnianie – kod sterownika na GitHubie" data-label-en="Irrigation – controller code on GitHub">
                                 <svg class="icon icon--fill" aria-hidden="true"><use href="#i-github"/></svg>
                                 <span lang="pl">Sterownik</span><span lang="en">Controller</span>
                             </a>
-                            <a class="project__link" href="https://github.com/damiantomczyszyn/Weather-Station">
+                            <a class="project__link" href="https://github.com/damiantomczyszyn/Weather-Station"
+                               aria-label="Nawadnianie – kod stacji pogodowej na GitHubie" data-label-pl="Nawadnianie – kod stacji pogodowej na GitHubie" data-label-en="Irrigation – weather station code on GitHub">
                                 <svg class="icon icon--fill" aria-hidden="true"><use href="#i-github"/></svg>
                                 <span lang="pl">Stacja pogodowa</span><span lang="en">Weather station</span>
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="project project--featured">
-                        <div class="project__meta">
-                            <span class="status status--edu"><span lang="pl">Projekt zespołowy</span><span lang="en">Team project</span></span>
-                            <span>2022 – 2023</span>
-                        </div>
-                        <h3 class="project__title"><span lang="pl">API serwisu społecznościowego w&nbsp;.NET</span><span lang="en">Social network API in .NET</span></h3>
-                        <p class="project__desc">
-                            <span lang="pl">Backend REST API zrobiony w&nbsp;czteroosobowym zespole studenckim. Moja rola: backend developer i&nbsp;tester.</span>
-                            <span lang="en">A REST API backend built by a four-person student team. My role: backend developer and tester.</span>
-                        </p>
-                        <ul class="project__points" lang="pl">
-                            <li>ASP.NET Core 6: kontrolery i&nbsp;serwisy dla postów, komentarzy, grup i&nbsp;użytkowników, mapowanie DTO (AutoMapper) i&nbsp;paginacja.</li>
-                            <li>Dostęp do MySQL przez EF Core, schemat z&nbsp;16&nbsp;tabel (znajomi, grupy, głosy, konwersacje).</li>
-                            <li>Wieloetapowy Dockerfile, docker-compose z&nbsp;healthcheckiem bazy oraz pipeline Bitbucket wdrażający na Heroku.</li>
-                        </ul>
-                        <ul class="project__points" lang="en">
-                            <li>ASP.NET Core 6: controllers and services for posts, comments, groups and users, DTO mapping (AutoMapper) and pagination.</li>
-                            <li>MySQL access through EF Core, with a 16-table schema (friends, groups, votes, conversations).</li>
-                            <li>Multi-stage Dockerfile, docker-compose with a database healthcheck, and a Bitbucket pipeline deploying to Heroku.</li>
-                        </ul>
-                        <ul class="tag-list" data-label-pl="Technologie" data-label-en="Technologies" aria-label="Technologie">
-                            <li class="tag">C#</li><li class="tag">ASP.NET Core</li><li class="tag">EF Core</li><li class="tag">MySQL</li><li class="tag">Docker</li><li class="tag">CI/CD</li>
-                        </ul>
-                        <div class="project__links">
-                            <a class="project__link" href="https://github.com/damiantomczyszyn/Social-network-backend">
-                                <svg class="icon icon--fill" aria-hidden="true"><use href="#i-github"/></svg>
-                                <span lang="pl">Kod na GitHubie</span><span lang="en">Code on GitHub</span>
                             </a>
                         </div>
                     </li>
                 </ul>
 
                 <h3 class="subhead"><span lang="pl">Wcześniejsze projekty</span><span lang="en">Earlier projects</span></h3>
-                <ul class="projects" role="list">
+                <ul class="projects projects--earlier" role="list">
                     <li class="project">
                         <div class="project__meta"><span>Java · 2023</span></div>
-                        <h3 class="project__title"><span lang="pl">Księgarnia internetowa</span><span lang="en">Online bookstore</span></h3>
+                        <h4 class="project__title"><span lang="pl">Księgarnia internetowa</span><span lang="en">Online bookstore</span></h4>
                         <p class="project__desc">
                             <span lang="pl">Spring Boot 3 z&nbsp;Thymeleaf, Spring Data JPA i&nbsp;Spring Security: koszyk w&nbsp;sesji, składanie zamówień i&nbsp;panel administratora. MySQL uruchamiany w&nbsp;Dockerze.</span>
                             <span lang="en">Spring Boot 3 with Thymeleaf, Spring Data JPA and Spring Security: a session-scoped cart, order placement and an admin panel. MySQL runs in Docker.</span>
                         </p>
                         <div class="project__links">
-                            <a class="project__link" href="https://github.com/damiantomczyszyn/bookstore-spring">
+                            <a class="project__link" href="https://github.com/damiantomczyszyn/bookstore-spring"
+                               aria-label="Księgarnia internetowa – kod na GitHubie" data-label-pl="Księgarnia internetowa – kod na GitHubie" data-label-en="Online bookstore – code on GitHub">
                                 <svg class="icon icon--fill" aria-hidden="true"><use href="#i-github"/></svg> GitHub
                             </a>
                         </div>
                     </li>
                     <li class="project">
                         <div class="project__meta"><span>Java · 2023</span></div>
-                        <h3 class="project__title"><span lang="pl">Komunikator klient–serwer</span><span lang="en">Client–server chat</span></h3>
+                        <h4 class="project__title"><span lang="pl">Komunikator klient–serwer</span><span lang="en">Client–server chat</span></h4>
                         <p class="project__desc">
-                            <span lang="pl">Wielowątkowy serwer TCP (wątek na klienta) i&nbsp;klient w&nbsp;Swingu, z&nbsp;rejestracją i&nbsp;logowaniem użytkowników. Hasła hashowane algorytmem PBKDF2.</span>
-                            <span lang="en">A multithreaded TCP server (one thread per client) and a Swing client with user sign-up and login. Passwords are hashed with PBKDF2.</span>
+                            <span lang="pl">Wielowątkowy serwer TCP (wątek na klienta) rozsyłający wiadomości do wszystkich połączonych klientów i&nbsp;klient w&nbsp;Swingu, z&nbsp;rejestracją i&nbsp;logowaniem użytkowników.</span>
+                            <span lang="en">A multithreaded TCP server (one thread per client) that broadcasts messages to all connected clients, and a Swing client with user sign-up and login.</span>
                         </p>
                         <div class="project__links">
-                            <a class="project__link" href="https://gitlab.com/damiantomczyszyn/komunikator">
+                            <a class="project__link" href="https://gitlab.com/damiantomczyszyn/komunikator"
+                               aria-label="Komunikator – kod na GitLabie" data-label-pl="Komunikator – kod na GitLabie" data-label-en="Client–server chat – code on GitLab">
                                 <svg class="icon icon--fill" aria-hidden="true"><use href="#i-gitlab"/></svg> GitLab
                             </a>
                         </div>
                     </li>
                     <li class="project">
-                        <div class="project__meta"><span>C · 8051 · 2020/21</span></div>
-                        <h3 class="project__title"><span lang="pl">Zegar na mikrokontrolerze 8051</span><span lang="en">8051 microcontroller clock</span></h3>
+                        <div class="project__meta"><span>C · 8051 · 2020–2021</span></div>
+                        <h4 class="project__title"><span lang="pl">Zegar na mikrokontrolerze 8051</span><span lang="en">8051 microcontroller clock</span></h4>
                         <p class="project__desc">
-                            <span lang="pl">Projekt z&nbsp;systemów wbudowanych w&nbsp;C (SDCC) i&nbsp;asemblerze: multipleksowany wyświetlacz 7-segmentowy na przerwaniach, polecenia SET/GET/EDIT przez UART i&nbsp;historia poleceń na LCD.</span>
-                            <span lang="en">Embedded systems coursework in C (SDCC) and assembly: an interrupt-driven multiplexed 7-segment display, SET/GET/EDIT commands over UART and a command history on an LCD.</span>
+                            <span lang="pl">Projekt zaliczeniowy z&nbsp;systemów wbudowanych, napisany w&nbsp;C (SDCC): wyświetlacz 7-segmentowy multipleksowany w&nbsp;przerwaniach, polecenia SET/GET/EDIT przez UART, historia poleceń na LCD i&nbsp;edycja czasu z&nbsp;klawiatury.</span>
+                            <span lang="en">Embedded systems coursework written in C (SDCC): an interrupt-driven multiplexed 7-segment display, SET/GET/EDIT commands over UART, a command history on an LCD and time editing from the keypad.</span>
                         </p>
                         <div class="project__links">
-                            <a class="project__link" href="https://github.com/damiantomczyszyn/Systemy-Wbudowane">
+                            <a class="project__link" href="https://github.com/damiantomczyszyn/Systemy-Wbudowane"
+                               aria-label="Zegar na 8051 – kod na GitHubie" data-label-pl="Zegar na 8051 – kod na GitHubie" data-label-en="8051 clock – code on GitHub">
                                 <svg class="icon icon--fill" aria-hidden="true"><use href="#i-github"/></svg> GitHub
                             </a>
                         </div>
@@ -526,14 +536,14 @@
         <section class="section" id="umiejetnosci" aria-labelledby="skills-title">
             <div class="container">
                 <div class="section__head">
-                    <span class="eyebrow"><span lang="pl">Umiejętności</span><span lang="en">Skills</span></span>
+                    <p class="eyebrow"><span lang="pl">Umiejętności</span><span lang="en">Skills</span></p>
                     <h2 class="section__title" id="skills-title">
                         <span lang="pl">Technologie i&nbsp;narzędzia</span>
                         <span lang="en">Technologies &amp; tools</span>
                     </h2>
                     <p class="legend">
-                        <span><span class="tag tag--pro">NFZ</span> <span lang="pl">używam w&nbsp;obecnej pracy</span><span lang="en">used in my current job</span></span>
-                        <span><span class="tag">…</span> <span lang="pl">projekty, homelab, studia</span><span lang="en">projects, homelab, university</span></span>
+                        <span><span class="tag tag--pro" aria-hidden="true">NFZ</span> <span lang="pl">technologie, których używam w&nbsp;obecnej pracy (oznaczone „NFZ”)</span><span lang="en">technologies I use in my current job (marked “NFZ”)</span></span>
+                        <span><span class="tag" aria-hidden="true">…</span> <span lang="pl">projekty, homelab, studia</span><span lang="en">projects, homelab, university</span></span>
                     </p>
                 </div>
 
@@ -541,65 +551,60 @@
                     <div class="skill-group">
                         <h3><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg><span lang="pl">Programowanie</span><span lang="en">Programming</span></h3>
                         <ul class="tag-list">
-                            <li class="tag tag--pro">C# / .NET</li><li class="tag tag--pro">Razor</li><li class="tag tag--pro">JavaScript</li><li class="tag tag--pro">Python</li><li class="tag">Bash</li><li class="tag">PowerShell</li><li class="tag">Java (Spring Boot)</li><li class="tag">C / C++</li>
+                            <li class="tag tag--pro">C# / .NET<span class="visually-hidden"> (NFZ)</span></li><li class="tag tag--pro">Razor<span class="visually-hidden"> (NFZ)</span></li><li class="tag tag--pro">JavaScript<span class="visually-hidden"> (NFZ)</span></li><li class="tag tag--pro">Python<span class="visually-hidden"> (NFZ)</span></li><li class="tag">Bash</li><li class="tag">PowerShell</li><li class="tag">Java (Spring Boot)</li><li class="tag">C / C++</li>
                         </ul>
                     </div>
                     <div class="skill-group">
-                        <h3><svg class="icon" aria-hidden="true"><use href="#i-database"/></svg><span lang="pl">Bazy danych i&nbsp;dane</span><span lang="en">Databases &amp; data</span></h3>
+                        <h3><svg class="icon" aria-hidden="true"><use href="#i-database"/></svg><span lang="pl">Bazy i&nbsp;przetwarzanie danych</span><span lang="en">Databases &amp; data</span></h3>
                         <ul class="tag-list">
-                            <li class="tag tag--pro">SQL</li><li class="tag tag--pro">PostgreSQL</li><li class="tag tag--pro">Oracle</li><li class="tag tag--pro">DB2</li><li class="tag tag--pro">pgAgent</li><li class="tag tag--pro">Pandas</li><li class="tag tag--pro">SQLAlchemy</li><li class="tag">EF Core</li><li class="tag">MySQL</li>
+                            <li class="tag tag--pro">SQL<span class="visually-hidden"> (NFZ)</span></li><li class="tag tag--pro">PostgreSQL<span class="visually-hidden"> (NFZ)</span></li><li class="tag tag--pro">Oracle<span class="visually-hidden"> (NFZ)</span></li><li class="tag tag--pro">DB2<span class="visually-hidden"> (NFZ)</span></li><li class="tag tag--pro">pgAgent<span class="visually-hidden"> (NFZ)</span></li><li class="tag tag--pro">Pandas<span class="visually-hidden"> (NFZ)</span></li><li class="tag tag--pro">SQLAlchemy<span class="visually-hidden"> (NFZ)</span></li><li class="tag">EF Core</li><li class="tag">MySQL</li>
                         </ul>
                     </div>
                     <div class="skill-group">
                         <h3><svg class="icon" aria-hidden="true"><use href="#i-server"/></svg><span lang="pl">Infrastruktura i&nbsp;DevOps</span><span lang="en">Infrastructure &amp; DevOps</span></h3>
                         <ul class="tag-list">
-                            <li class="tag tag--pro">Linux (RedHat)</li><li class="tag tag--pro">Docker</li><li class="tag">Git</li><li class="tag">Proxmox VE</li><li class="tag">Windows Server</li><li class="tag">Active Directory</li><li class="tag">GPO / RBAC</li><li class="tag">Tailscale</li>
+                            <li class="tag tag--pro">Linux (Red Hat)<span class="visually-hidden"> (NFZ)</span></li><li class="tag tag--pro">Docker<span class="visually-hidden"> (NFZ)</span></li><li class="tag">Git</li><li class="tag">Proxmox VE</li><li class="tag">Windows Server</li><li class="tag">Active Directory</li><li class="tag">GPO / RBAC</li><li class="tag">Tailscale</li>
                         </ul>
                     </div>
                     <div class="skill-group">
                         <h3><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg><span lang="pl">Sieci i&nbsp;bezpieczeństwo</span><span lang="en">Networking &amp; security</span></h3>
                         <ul class="tag-list">
-                            <li class="tag">TCP/IP</li><li class="tag">DNS</li><li class="tag">Wazuh (SIEM)</li><li class="tag">Hardening</li><li class="tag" lang="pl">Bezpieczeństwo aplikacji WWW</li><li class="tag" lang="en">Web application security</li><li class="tag" lang="pl">Bezpieczeństwo AD</li><li class="tag" lang="en">AD security</li>
+                            <li class="tag">TCP/IP</li><li class="tag">DNS</li><li class="tag">Wazuh (SIEM)</li><li class="tag">Hardening</li><li class="tag" lang="pl">Bezpieczeństwo aplikacji webowych</li><li class="tag" lang="en">Web application security</li><li class="tag" lang="pl">Bezpieczeństwo AD</li><li class="tag" lang="en">AD security</li>
                         </ul>
                     </div>
                     <div class="skill-group">
-                        <h3><svg class="icon" aria-hidden="true"><use href="#i-cpu"/></svg>Embedded &amp; IoT</h3>
+                        <h3><svg class="icon" aria-hidden="true"><use href="#i-cpu"/></svg><span lang="pl">Systemy wbudowane i&nbsp;IoT</span><span lang="en">Embedded &amp; IoT</span></h3>
                         <ul class="tag-list">
-                            <li class="tag">ESP32 / ESP8266</li><li class="tag">Arduino</li><li class="tag">PlatformIO</li><li class="tag">Raspberry Pi</li><li class="tag">8051 (C, ASM)</li><li class="tag">I²C / UART</li>
+                            <li class="tag">ESP32 / ESP8266</li><li class="tag">Arduino</li><li class="tag">PlatformIO</li><li class="tag">Raspberry Pi</li><li class="tag">8051 (C)</li><li class="tag">I²C / UART</li>
                         </ul>
                     </div>
                     <div class="skill-group">
-                        <h3><svg class="icon" aria-hidden="true"><use href="#i-terminal"/></svg>AI &amp; ML</h3>
+                        <h3><svg class="icon" aria-hidden="true"><use href="#i-terminal"/></svg><span lang="pl">AI i&nbsp;uczenie maszynowe</span><span lang="en">AI &amp; machine learning</span></h3>
                         <ul class="tag-list">
-                            <li class="tag">TensorFlow / Keras</li><li class="tag">OpenCV</li><li class="tag">Jupyter</li><li class="tag" lang="pl">Agenci AI (Claude)</li><li class="tag" lang="en">AI agents (Claude)</li>
+                            <li class="tag">TensorFlow / Keras</li><li class="tag">OpenCV</li><li class="tag">Jupyter</li><li class="tag" lang="pl">Claude (AI w&nbsp;diagnostyce)</li><li class="tag" lang="en">Claude (AI-assisted troubleshooting)</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="creds">
-                    <div class="cred-card">
+                    <div class="cred-card cred-card--wide">
                         <h3><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg><span lang="pl">Szkolenia</span><span lang="en">Training</span></h3>
                         <ul class="cred-list">
                             <li>
                                 <strong><a href="https://sklep.securitum.pl/active-directory-master">Active Directory Master</a></strong>
-                                <span lang="pl">Securitum / sekurak · ofensywne bezpieczeństwo Active Directory</span>
-                                <span lang="en">Securitum / sekurak · offensive Active Directory security</span>
+                                <span class="cred-list__meta" lang="pl">Securitum / sekurak · ofensywne bezpieczeństwo Active Directory</span>
+                                <span class="cred-list__meta" lang="en">Securitum / sekurak · offensive Active Directory security</span>
                             </li>
                             <li>
                                 <strong lang="pl">Bezpieczeństwo aplikacji webowych</strong>
                                 <strong lang="en">Web application security</strong>
-                                <span lang="pl">szkolenia sekuraka, 2022–2025</span>
-                                <span lang="en">sekurak trainings, 2022–2025</span>
+                                <span class="cred-list__meta" lang="pl">szkolenia sekuraka, 2022–2025</span>
+                                <span class="cred-list__meta" lang="en">sekurak training courses, 2022–2025</span>
                             </li>
                             <li>
                                 <strong lang="pl">Ochrona danych osobowych i&nbsp;bezpieczeństwo informacji</strong>
                                 <strong lang="en">Personal data protection &amp; information security</strong>
-                                <span lang="pl">NFZ</span><span lang="en">NFZ (internal)</span>
-                            </li>
-                            <li>
-                                <strong>Java Programming Masterclass · Java – Spring Framework</strong>
-                                <span lang="pl">kursy Udemy (T. Buchalka, M. Chrzonstowski)</span>
-                                <span lang="en">Udemy courses (T. Buchalka, M. Chrzonstowski)</span>
+                                <span class="cred-list__meta">NFZ</span>
                             </li>
                         </ul>
                     </div>
@@ -608,12 +613,12 @@
                         <ul class="cred-list">
                             <li>
                                 <strong><span lang="pl">Polski</span><span lang="en">Polish</span></strong>
-                                <span lang="pl">ojczysty</span><span lang="en">native</span>
+                                <span class="cred-list__meta" lang="pl">ojczysty</span><span class="cred-list__meta" lang="en">native</span>
                             </li>
                             <li>
                                 <strong><span lang="pl">Angielski</span><span lang="en">English</span> · B1/B2</strong>
-                                <span lang="pl">praca z&nbsp;dokumentacją techniczną</span>
-                                <span lang="en">working with technical documentation</span>
+                                <span class="cred-list__meta" lang="pl">praca z&nbsp;dokumentacją techniczną</span>
+                                <span class="cred-list__meta" lang="en">working with technical documentation</span>
                             </li>
                         </ul>
                     </div>
@@ -622,24 +627,24 @@
         </section>
 
         <!-- CONTACT -->
-        <section class="section" id="kontakt" aria-labelledby="contact-title">
+        <section class="section section--contact" id="kontakt" aria-labelledby="contact-title">
             <div class="container">
                 <div class="contact">
                     <div>
-                        <span class="eyebrow"><span lang="pl">Kontakt</span><span lang="en">Contact</span></span>
-                        <h2 class="contact__title" id="contact-title"><span lang="pl">Porozmawiajmy</span><span lang="en">Let's talk</span></h2>
+                        <p class="eyebrow"><span lang="pl">Kontakt</span><span lang="en">Contact</span></p>
+                        <h2 class="contact__title" id="contact-title"><span lang="pl">Porozmawiajmy</span><span lang="en">Let’s talk</span></h2>
                         <p class="contact__lead">
-                            <span lang="pl">Chętnie porozmawiam o&nbsp;rolach związanych z&nbsp;programowaniem (.NET, Python), DevOps i&nbsp;bezpieczeństwem IT.</span>
-                            <span lang="en">I'm happy to talk about roles in software development (.NET, Python), DevOps and IT security.</span>
+                            <span lang="pl">Jestem otwarty na oferty pracy związane z&nbsp;programowaniem (.NET, Python), DevOps i&nbsp;bezpieczeństwem IT.</span>
+                            <span lang="en">I’m open to roles in software development (.NET, Python), DevOps and IT security.</span>
                         </p>
                         <div class="hero__actions">
                             <a class="btn btn--primary" href="mailto:Damian.Tomczyszyn@outlook.my">
                                 <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
-                                <span lang="pl">Napisz e-mail</span><span lang="en">Send an e-mail</span>
+                                <span lang="pl">Napisz e-mail</span><span lang="en">Send an email</span>
                             </a>
-                            <a class="btn btn--ghost" href="docs/Damian_Tomczyszyn_CV_Uniwersalne.pdf" download>
+                            <a class="btn btn--ghost" href="docs/Damian_Tomczyszyn_CV_Uniwersalne.pdf" download="Damian_Tomczyszyn_CV.pdf">
                                 <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
-                                <span lang="pl">CV (PDF)</span><span lang="en">CV (PDF, Polish)</span>
+                                <span lang="pl">CV (PDF)</span><span lang="en">CV (PDF, in Polish)</span>
                             </a>
                         </div>
                     </div>
@@ -647,11 +652,14 @@
                         <li>
                             <div class="contact-row">
                                 <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
-                                <a href="mailto:Damian.Tomczyszyn@outlook.my" style="text-decoration:none;color:inherit">
-                                    <span class="contact-row__label">E-mail</span>
-                                    <span class="contact-row__value">Damian.Tomczyszyn@outlook.my</span>
+                                <a class="contact-row__link" href="mailto:Damian.Tomczyszyn@outlook.my">
+                                    <span class="contact-row__label"><span lang="pl">E-mail</span><span lang="en">Email</span></span>
+                                    <span class="contact-row__value">Damian.Tomczyszyn@<wbr>outlook.my</span>
                                 </a>
-                                <button type="button" class="copy-btn" data-copy="Damian.Tomczyszyn@outlook.my"><span lang="pl">Kopiuj</span><span lang="en">Copy</span></button>
+                                <button type="button" class="copy-btn" data-copy="Damian.Tomczyszyn@outlook.my"
+                                        aria-label="Kopiuj adres e-mail" data-label-pl="Kopiuj adres e-mail" data-label-en="Copy email address" hidden>
+                                    <svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg>
+                                </button>
                             </div>
                         </li>
                         <li>
@@ -668,7 +676,7 @@
                                 <svg class="icon icon--fill" aria-hidden="true"><use href="#i-linkedin"/></svg>
                                 <span>
                                     <span class="contact-row__label">LinkedIn</span>
-                                    <span class="contact-row__value">linkedin.com/in/tomczyszyn</span>
+                                    <span class="contact-row__value">linkedin.com/in/<wbr>tomczyszyn</span>
                                 </span>
                             </a>
                         </li>
@@ -677,7 +685,7 @@
                                 <svg class="icon icon--fill" aria-hidden="true"><use href="#i-github"/></svg>
                                 <span>
                                     <span class="contact-row__label">GitHub</span>
-                                    <span class="contact-row__value">github.com/damiantomczyszyn</span>
+                                    <span class="contact-row__value">github.com/<wbr>damiantomczyszyn</span>
                                 </span>
                             </a>
                         </li>
@@ -686,11 +694,12 @@
                                 <svg class="icon icon--fill" aria-hidden="true"><use href="#i-gitlab"/></svg>
                                 <span>
                                     <span class="contact-row__label">GitLab</span>
-                                    <span class="contact-row__value">gitlab.com/damiantomczyszyn</span>
+                                    <span class="contact-row__value">gitlab.com/<wbr>damiantomczyszyn</span>
                                 </span>
                             </a>
                         </li>
                     </ul>
+                    <p class="visually-hidden" role="status" id="copy-status"></p>
                 </div>
             </div>
         </section>
@@ -700,7 +709,7 @@
         <div class="container site-footer__inner">
             <p>© 2026 Damian Tomczyszyn</p>
             <p>
-                <span lang="pl">Aktualizacja: październik 2026 · bez cookies i&nbsp;analityki · <a href="https://github.com/damiantomczyszyn/About-Me">kod strony</a></span>
+                <span lang="pl">Aktualizacja: październik 2026 · bez plików cookie i&nbsp;narzędzi analitycznych · <a href="https://github.com/damiantomczyszyn/About-Me">kod strony</a></span>
                 <span lang="en">Updated October 2026 · no cookies or analytics · <a href="https://github.com/damiantomczyszyn/About-Me">site source</a></span>
             </p>
         </div>
