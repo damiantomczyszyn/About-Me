@@ -89,6 +89,8 @@
         <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
         <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
         <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+        <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
         <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
         <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol>
         <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
@@ -135,7 +137,8 @@
                 </button>
                 <button type="button" class="icon-button menu-toggle" data-menu-toggle aria-controls="site-nav" aria-expanded="false"
                         aria-label="Menu" data-label-pl="Menu" data-label-en="Menu">
-                    <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+                    <svg class="icon icon-menu" aria-hidden="true"><use href="#i-menu"/></svg>
+                    <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"/></svg>
                 </button>
             </div>
         </div>
@@ -146,11 +149,11 @@
         <section class="hero" id="top" aria-labelledby="hero-name">
             <div class="container hero__grid">
                 <div class="hero__text">
-                    <p class="hero__role">Backend Developer · .NET / Python</p>
+                    <p class="hero__role">Backend Developer · .NET&nbsp;/&nbsp;Python</p>
                     <h1 class="hero__name" id="hero-name">Damian Tomczyszyn</h1>
                     <p class="hero__tagline">
-                        <span lang="pl">Tworzę API i&nbsp;aplikacje wewnętrzne w&nbsp;C#/.NET, automatyzuję integrację danych w&nbsp;Pythonie i&nbsp;znam infrastrukturę, na której działają: Linuksa, Dockera, Active Directory.</span>
-                        <span lang="en">I build C#/.NET APIs and internal applications, automate data integration in Python, and know the infrastructure they run on: Linux, Docker and Active Directory.</span>
+                        <span lang="pl">Tworzę API i&nbsp;aplikacje wewnętrzne w&nbsp;C#/.NET, automatyzuję integrację danych w&nbsp;Pythonie i&nbsp;znam infrastrukturę: Linuksa, Dockera i&nbsp;Active Directory.</span>
+                        <span lang="en">I build C#/.NET APIs and internal applications, automate data integration in Python, and know my way around infrastructure: Linux, Docker and Active Directory.</span>
                     </p>
                     <ul class="hero__facts">
                         <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> <span lang="pl">Warszawa</span><span lang="en">Warsaw, Poland</span></li>
@@ -196,13 +199,13 @@
                             Jestem magistrem informatyki (UMCS, specjalność deweloperska). W&nbsp;<strong>Narodowym Funduszu Zdrowia</strong> łączę programowanie backendu z&nbsp;pracą przy infrastrukturze: piszę kod w&nbsp;<strong>C# (.NET)</strong> i&nbsp;<strong>Pythonie</strong>, zarządzam konfiguracją i&nbsp;wdrażam poprawki na serwerach testowych z&nbsp;Linuksem, a&nbsp;przyczyn błędów szukam w&nbsp;logach. Zakres obowiązków opisuję w&nbsp;sekcji <a href="#doswiadczenie">Doświadczenie</a>.
                         </p>
                         <p lang="en">
-                            I hold an MSc in Computer Science (UMCS, software development track). At Poland’s <strong>National Health Fund (NFZ)</strong> my work combines backend development with infrastructure: I write <strong>C# (.NET)</strong> and <strong>Python</strong> code, manage configuration and deploy fixes on Linux test servers, and dig through logs to find the root cause of bugs. My responsibilities are listed under <a href="#doswiadczenie">Experience</a>.
+                            I hold an MSc in Computer Science (UMCS, software development track). At Poland’s <strong>National Health Fund (NFZ)</strong>, I combine backend development with infrastructure work: I write <strong>C# (.NET)</strong> and <strong>Python</strong> code, manage configuration and deploy fixes on Linux test servers, and dig through logs to find the root cause of bugs. My responsibilities are listed under <a href="#doswiadczenie">Experience</a>.
                         </p>
                         <p lang="pl">
-                            Po pracy utrzymuję <strong>homelab</strong>: domenę Active Directory na Windows Server, działającą w&nbsp;maszynach wirtualnych na Proxmox VE i&nbsp;połączoną siecią Tailscale. Wiedzę z&nbsp;bezpieczeństwa IT poszerzam na szkoleniach Securitum (sekurak). Na studiach i&nbsp;w&nbsp;projektach własnych pisałem też w&nbsp;Javie (Spring Boot) oraz w&nbsp;C/C++ dla mikrokontrolerów, co widać w&nbsp;projektach poniżej.
+                            Po pracy utrzymuję <strong>homelab</strong>: domenę Active Directory na Windows Server, działającą w&nbsp;maszynach wirtualnych na Proxmox VE, oraz sieć Tailscale łączącą rozproszone urządzenia. Wiedzę z&nbsp;bezpieczeństwa IT poszerzam na szkoleniach Securitum (sekurak). Na studiach i&nbsp;w&nbsp;projektach własnych pisałem też w&nbsp;Javie (Spring Boot) oraz w&nbsp;C/C++ dla mikrokontrolerów&nbsp;– przykłady znajdziesz poniżej.
                         </p>
                         <p lang="en">
-                            Outside work I run a <strong>homelab</strong>: an Active Directory domain on Windows Server, running in VMs on Proxmox VE and connected with Tailscale. I’m building my security knowledge through Securitum (sekurak) training courses. At university and in personal projects I also wrote Java (Spring Boot) and C/C++ for microcontrollers, as the projects below show.
+                            Outside work I run a <strong>homelab</strong>: an Active Directory domain on Windows Server, hosted in VMs on Proxmox VE, and a Tailscale mesh VPN linking my devices. I’m building my security knowledge through Securitum (sekurak) training courses. At university and in personal projects I also wrote Java (Spring Boot) and C/C++ for microcontrollers, as the examples below show.
                         </p>
                     </div>
                     <ul class="focus-list">
@@ -210,29 +213,29 @@
                             <span class="focus-item__icon"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span>
                             <div>
                                 <h3><span lang="pl">Backend i&nbsp;aplikacje wewnętrzne</span><span lang="en">Backend &amp; internal apps</span></h3>
-                                <p>C# / .NET · API · Razor · JavaScript</p>
+                                <p>C#&nbsp;/&nbsp;.NET&nbsp;· API&nbsp;· Razor&nbsp;· JavaScript</p>
                             </div>
                         </li>
                         <li class="focus-item">
                             <span class="focus-item__icon"><svg class="icon" aria-hidden="true"><use href="#i-database"/></svg></span>
                             <div>
                                 <h3><span lang="pl">Dane i&nbsp;automatyzacja</span><span lang="en">Data &amp; automation</span></h3>
-                                <p>Python · Pandas · SQLAlchemy · PostgreSQL · Oracle · DB2</p>
+                                <p>Python&nbsp;· Pandas&nbsp;· SQLAlchemy&nbsp;· PostgreSQL&nbsp;· Oracle&nbsp;· DB2</p>
                             </div>
                         </li>
                         <li class="focus-item">
                             <span class="focus-item__icon"><svg class="icon" aria-hidden="true"><use href="#i-server"/></svg></span>
                             <div>
                                 <h3><span lang="pl">Infrastruktura</span><span lang="en">Infrastructure</span></h3>
-                                <p>Linux (Red Hat) · Docker · Proxmox VE · Windows Server · AD</p>
+                                <p>Linux (Red Hat)&nbsp;· Docker&nbsp;· Proxmox VE&nbsp;· Windows Server&nbsp;· AD</p>
                             </div>
                         </li>
                         <li class="focus-item">
                             <span class="focus-item__icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
                             <div>
                                 <h3><span lang="pl">Bezpieczeństwo</span><span lang="en">Security</span></h3>
-                                <p lang="pl">Bezpieczeństwo AD i&nbsp;aplikacji webowych · szkolenia Securitum / sekurak</p>
-                                <p lang="en">AD and web application security · Securitum / sekurak training</p>
+                                <p lang="pl">Bezpieczeństwo AD i&nbsp;aplikacji webowych&nbsp;· szkolenia Securitum&nbsp;/&nbsp;sekurak</p>
+                                <p lang="en">AD and web application security&nbsp;· Securitum&nbsp;/&nbsp;sekurak training</p>
                             </div>
                         </li>
                     </ul>
@@ -260,11 +263,11 @@
                         </div>
                         <div class="entry__body">
                             <h4 class="entry__title"><span lang="pl">Informatyk (Backend &amp; Platform Engineer)</span><span lang="en">IT Specialist (Backend &amp; Platform Engineer)</span></h4>
-                            <p class="entry__org"><span lang="pl">Narodowy Fundusz Zdrowia (NFZ) · Warszawa</span><span lang="en">Poland’s National Health Fund (NFZ) · Warsaw</span></p>
+                            <p class="entry__org"><span lang="pl">Narodowy Fundusz Zdrowia (NFZ)&nbsp;· Warszawa</span><span lang="en">Poland’s National Health Fund (NFZ)&nbsp;· Warsaw</span></p>
                             <ul class="entry__points" lang="pl">
                                 <li>Projektowanie API w&nbsp;C# (.NET) oraz budowa interfejsów (widoki Razor, JavaScript) dla systemów i&nbsp;aplikacji wewnętrznych.</li>
                                 <li>Zarządzanie konfiguracją i&nbsp;wdrażanie poprawek na serwerach testowych (Linux Red Hat).</li>
-                                <li>Tworzenie skryptów w&nbsp;Pythonie (Pandas, SQLAlchemy) do przetwarzania i&nbsp;integracji danych z&nbsp;PostgreSQL, Oracle i&nbsp;DB2, eliminujących powtarzalne procesy ręczne.</li>
+                                <li>Tworzenie skryptów w&nbsp;Pythonie (Pandas, SQLAlchemy), które przetwarzają i&nbsp;integrują dane z&nbsp;PostgreSQL, Oracle i&nbsp;DB2, zastępując powtarzalną pracę ręczną.</li>
                                 <li>Diagnozowanie błędów na podstawie logów, analiza problemów oraz weryfikacja spójności danych między źródłami.</li>
                                 <li>Automatyzacja procesów bazodanowych przy użyciu pgAgenta oraz konteneryzacja usług testowych (Docker).</li>
                             </ul>
@@ -343,7 +346,7 @@
                         <span lang="en">What I build outside work</span>
                     </h2>
                     <p class="section__lead">
-                        <span lang="pl">Homelab, projekty ze studiów i&nbsp;własne konstrukcje – od sieci neuronowych po sterowniki na mikrokontrolerach.</span>
+                        <span lang="pl">Homelab, projekty ze studiów i&nbsp;własne konstrukcje&nbsp;– od sieci neuronowych po sterowniki na mikrokontrolerach.</span>
                         <span lang="en">My homelab, university projects and hands-on builds, from neural networks to microcontroller firmware.</span>
                     </p>
                 </div>
@@ -384,8 +387,8 @@
                         </div>
                         <h4 class="project__title"><span lang="pl">API serwisu społecznościowego w&nbsp;.NET</span><span lang="en">Social network API in .NET</span></h4>
                         <p class="project__desc">
-                            <span lang="pl">Backend (REST API) stworzony w&nbsp;czteroosobowym zespole studenckim: dwie osoby backend, dwie frontend. Moja rola: backend developer i&nbsp;tester.</span>
-                            <span lang="en">A REST API backend from a four-person student team: two on the backend, two on the frontend. My role: backend developer and tester.</span>
+                            <span lang="pl">Backend (REST API) stworzony w&nbsp;czteroosobowym zespole studenckim, w&nbsp;którym dwie osoby odpowiadały za backend, a&nbsp;dwie za frontend. Moja rola: backend developer i&nbsp;tester.</span>
+                            <span lang="en">The REST API backend of a four-person student team project: two people on the backend, two on the frontend. My role: backend developer and tester.</span>
                         </p>
                         <ul class="project__points" lang="pl">
                             <li>ASP.NET Core 6: kontrolery i&nbsp;serwisy dla postów, komentarzy, grup i&nbsp;użytkowników, mapowanie DTO (AutoMapper) i&nbsp;stronicowanie wyników.</li>
@@ -398,7 +401,7 @@
                             <li>Multi-stage Dockerfile, docker-compose with a database healthcheck, and a Bitbucket pipeline deploying to Heroku.</li>
                         </ul>
                         <ul class="tag-list" aria-label="Technologie" data-label-pl="Technologie" data-label-en="Technologies">
-                            <li class="tag">C#</li><li class="tag">ASP.NET Core</li><li class="tag">EF Core</li><li class="tag">MySQL</li><li class="tag">Docker</li><li class="tag">CI/CD</li>
+                            <li class="tag">C#</li><li class="tag">ASP.NET Core</li><li class="tag">EF Core</li><li class="tag">MySQL</li><li class="tag">Docker</li><li class="tag">Bitbucket Pipelines</li>
                         </ul>
                         <div class="project__links">
                             <a class="project__link" href="https://github.com/damiantomczyszyn/Social-network-backend"
@@ -416,18 +419,18 @@
                         </div>
                         <h4 class="project__title"><span lang="pl">OCR oparty na sieciach neuronowych</span><span lang="en">Neural-network OCR engine</span></h4>
                         <p class="project__desc">
-                            <span lang="pl">Napisany w&nbsp;Pythonie silnik rozpoznawania tekstu drukowanego, złożony z&nbsp;trzech sieci neuronowych.</span>
-                            <span lang="en">A Python engine for recognising printed text, built from three neural networks.</span>
+                            <span lang="pl">Praca o&nbsp;rozpoznawaniu tekstu drukowanego: potok trzech sieci neuronowych w&nbsp;Pythonie, które wytrenowałem i&nbsp;oceniłem.</span>
+                            <span lang="en">A thesis on printed-text recognition: a pipeline of three neural networks in Python that I trained and evaluated.</span>
                         </p>
                         <ul class="project__points" lang="pl">
                             <li>Dwie sieci U-Net dzielą stronę na wiersze i&nbsp;wyrazy, a&nbsp;sieć CRNN (CNN + dwukierunkowy LSTM, funkcja straty CTC) rozpoznaje słowa.</li>
-                            <li>Wszystkie trzy sieci wytrenowałem sam, CRNN na 4&nbsp;mln syntetycznych obrazów słów z&nbsp;własnym generatorem wsadów. Architekturę U-Net, skrypty łączące etapy i&nbsp;generator danych zaczerpnąłem z&nbsp;otwartych implementacji cytowanych w&nbsp;pracy.</li>
+                            <li>Wszystkie trzy sieci wytrenowałem sam&nbsp;– CRNN na 4&nbsp;mln syntetycznych obrazów słów, przy użyciu własnego generatora wsadów. Kod modeli U-Net i&nbsp;CRNN, skrypty łączące etapy, generator danych i&nbsp;zbiór uczący do segmentacji wierszy pochodzą z&nbsp;otwartych implementacji i&nbsp;samouczków.</li>
                             <li>Porównanie z&nbsp;Tesseractem 5.1 na ręcznie oznaczonych zbiorach testowych (tekst z&nbsp;plików PDF i&nbsp;skany książki). Tesseract wypadł lepiej, a&nbsp;praca analizuje przyczyny, głównie błędy segmentacji.</li>
                         </ul>
                         <ul class="project__points" lang="en">
                             <li>Two U-Nets split the page into lines and words, and a CRNN (CNN + bidirectional LSTM, CTC loss) recognises the words.</li>
-                            <li>I trained all three networks myself, the CRNN on 4 million synthetic word images with my own batch generator. The U-Net architecture, the scripts chaining the stages and the data generator come from open-source implementations cited in the thesis.</li>
-                            <li>Benchmarked against Tesseract 5.1 on hand-annotated test sets (PDF text and book scans). Tesseract came out ahead, and the thesis analyses why, mainly segmentation errors.</li>
+                            <li>I trained all three networks myself, the CRNN on 4 million synthetic word images using my own batch generator. The U-Net and CRNN model code, the scripts chaining the stages, the data generator and the line-segmentation training set come from open-source implementations and tutorials.</li>
+                            <li>Benchmarked against Tesseract 5.1 on hand-annotated test sets (PDF text and book scans). Tesseract came out ahead; the thesis attributes the gap mainly to segmentation errors.</li>
                         </ul>
                         <ul class="tag-list" aria-label="Technologie" data-label-pl="Technologie" data-label-en="Technologies">
                             <li class="tag">Python</li><li class="tag">TensorFlow</li><li class="tag">Keras</li><li class="tag">OpenCV</li><li class="tag">Jupyter</li>
@@ -448,18 +451,18 @@
                         </div>
                         <h4 class="project__title"><span lang="pl">Nawadnianie sterowane prognozą pogody</span><span lang="en">Forecast-driven irrigation</span></h4>
                         <p class="project__desc">
-                            <span lang="pl">Prototyp sterownika na ESP8266, który codziennie o&nbsp;22:00 ocenia, czy podlewać.</span>
-                            <span lang="en">A prototype ESP8266 controller that decides every evening at 22:00 whether to water.</span>
+                            <span lang="pl">Prototyp sterownika na ESP8266, który ma codziennie o&nbsp;22:00 decydować, czy podlewać.</span>
+                            <span lang="en">A prototype ESP8266 controller designed to decide every evening at 22:00 whether to water.</span>
                         </p>
                         <ul class="project__points" lang="pl">
-                            <li>Ważone drzewo decyzyjne (9&nbsp;kryteriów, m.in. opady, wilgotność gleby i&nbsp;prognoza deszczu) wylicza prawdopodobieństwo podlewania na podstawie prognozy z&nbsp;API Visual Crossing.</li>
-                            <li>Osobny węzeł pomiarowy na ESP8266 (BME280, DHT22, czujnik deszczu) udostępnia odczyty przez HTTP w&nbsp;formacie JSON. Połączenie go ze sterownikiem na żywo nie jest jeszcze ukończone.</li>
-                            <li>Algorytm przetestowałem offline na 151&nbsp;dniach historycznych danych pogodowych, podawanych przez lokalny serwer w&nbsp;Pythonie. Trafność decyzji sprawdzał osobny skrypt.</li>
+                            <li>Ważone drzewo decyzyjne (9&nbsp;kryteriów, m.in. opady, wilgotność gleby i&nbsp;prognoza deszczu) wylicza prawdopodobieństwo podlewania z&nbsp;dwóch źródeł: prognozy z&nbsp;API Visual Crossing i&nbsp;odczytów stacji pomiarowej.</li>
+                            <li>Osobny węzeł pomiarowy na ESP8266 (BME280, DHT22, czujnik deszczu) udostępnia odczyty przez HTTP w&nbsp;formacie JSON. Praca ciągła nie jest jeszcze ukończona: sterownik nie pobiera jeszcze danych ze stacji, a&nbsp;prognozę pobiera tylko przy starcie.</li>
+                            <li>Algorytm przetestowałem offline: lokalny serwer w&nbsp;Pythonie podawał mu historyczne dane pogodowe z&nbsp;151&nbsp;dni, a&nbsp;trafność decyzji sprawdzał osobny skrypt.</li>
                         </ul>
                         <ul class="project__points" lang="en">
-                            <li>A weighted decision tree with 9 criteria, including rainfall, soil moisture and the chance of rain, turns the Visual Crossing forecast into a watering probability.</li>
-                            <li>A separate ESP8266 sensor node (BME280, DHT22, rain sensor) serves its readings over HTTP as JSON. Wiring it into the controller live is not finished yet.</li>
-                            <li>I tested the algorithm offline on 151 days of historical weather data, fed in by a local Python server, and a separate script scored each decision.</li>
+                            <li>A weighted decision tree with 9 criteria, including rainfall, soil moisture and the chance of rain, combines two inputs, the Visual Crossing forecast and the weather station’s readings, into a watering probability.</li>
+                            <li>A separate ESP8266 sensor node (BME280, DHT22, rain sensor) serves its readings over HTTP as JSON. Continuous operation isn’t finished yet: the controller doesn’t read the station yet and fetches the forecast only at start-up.</li>
+                            <li>I tested the algorithm offline: a local Python server fed it historical weather data from 151 days, and a separate script scored each decision.</li>
                         </ul>
                         <ul class="tag-list" aria-label="Technologie" data-label-pl="Technologie" data-label-en="Technologies">
                             <li class="tag">C++</li><li class="tag">ESP8266</li><li class="tag">PlatformIO</li><li class="tag">HTTP / JSON</li><li class="tag">Python</li>
@@ -499,7 +502,7 @@
                         <div class="project__meta"><span>Java · 2023</span></div>
                         <h4 class="project__title"><span lang="pl">Komunikator klient–serwer</span><span lang="en">Client–server chat</span></h4>
                         <p class="project__desc">
-                            <span lang="pl">Wielowątkowy serwer TCP (wątek na klienta) rozsyłający wiadomości do wszystkich połączonych klientów i&nbsp;klient w&nbsp;Swingu, z&nbsp;rejestracją i&nbsp;logowaniem użytkowników.</span>
+                            <span lang="pl">Wielowątkowy serwer TCP (jeden wątek na klienta), który rozsyła wiadomości do wszystkich połączonych klientów, oraz aplikacja kliencka w&nbsp;Swingu z&nbsp;rejestracją i&nbsp;logowaniem użytkowników.</span>
                             <span lang="en">A multithreaded TCP server (one thread per client) that broadcasts messages to all connected clients, and a Swing client with user sign-up and login.</span>
                         </p>
                         <div class="project__links">
@@ -513,8 +516,8 @@
                         <div class="project__meta"><span>C · 8051 · 2020–2021</span></div>
                         <h4 class="project__title"><span lang="pl">Zegar na mikrokontrolerze 8051</span><span lang="en">8051 microcontroller clock</span></h4>
                         <p class="project__desc">
-                            <span lang="pl">Projekt zaliczeniowy z&nbsp;systemów wbudowanych, napisany w&nbsp;C (SDCC): wyświetlacz 7-segmentowy multipleksowany w&nbsp;przerwaniach, polecenia SET/GET/EDIT przez UART, historia poleceń na LCD i&nbsp;edycja czasu z&nbsp;klawiatury.</span>
-                            <span lang="en">Embedded systems coursework written in C (SDCC): an interrupt-driven multiplexed 7-segment display, SET/GET/EDIT commands over UART, a command history on an LCD and time editing from the keypad.</span>
+                            <span lang="pl">Projekt zaliczeniowy z&nbsp;systemów wbudowanych, napisany w&nbsp;C (SDCC): wyświetlacz <span class="nowrap">7-segmentowy</span> multipleksowany w&nbsp;przerwaniach, polecenia SET/GET/EDIT przez UART, historia poleceń na LCD i&nbsp;edycja czasu z&nbsp;klawiatury.</span>
+                            <span lang="en">Embedded systems coursework written in C (SDCC): an interrupt-driven multiplexed <span class="nowrap">7-segment</span> display, SET/GET/EDIT commands over UART, a command history on an LCD and time editing from the keypad.</span>
                         </p>
                         <div class="project__links">
                             <a class="project__link" href="https://github.com/damiantomczyszyn/Systemy-Wbudowane"
@@ -581,7 +584,7 @@
                     <div class="skill-group">
                         <h3><svg class="icon" aria-hidden="true"><use href="#i-terminal"/></svg><span lang="pl">AI i&nbsp;uczenie maszynowe</span><span lang="en">AI &amp; machine learning</span></h3>
                         <ul class="tag-list">
-                            <li class="tag">TensorFlow / Keras</li><li class="tag">OpenCV</li><li class="tag">Jupyter</li><li class="tag" lang="pl">Claude (AI w&nbsp;diagnostyce)</li><li class="tag" lang="en">Claude (AI-assisted troubleshooting)</li>
+                            <li class="tag">TensorFlow / Keras</li><li class="tag">OpenCV</li><li class="tag">Jupyter</li><li class="tag" lang="pl">Claude (AI w&nbsp;diagnozie infrastruktury)</li><li class="tag" lang="en">Claude (AI-assisted troubleshooting)</li>
                         </ul>
                     </div>
                 </div>
@@ -598,8 +601,8 @@
                             <li>
                                 <strong lang="pl">Bezpieczeństwo aplikacji webowych</strong>
                                 <strong lang="en">Web application security</strong>
-                                <span class="cred-list__meta" lang="pl">szkolenia sekuraka, 2022–2025</span>
-                                <span class="cred-list__meta" lang="en">sekurak training courses, 2022–2025</span>
+                                <span class="cred-list__meta" lang="pl">szkolenia sekuraka, 2022–&#8288;2025</span>
+                                <span class="cred-list__meta" lang="en">sekurak training courses, 2022–&#8288;2025</span>
                             </li>
                             <li>
                                 <strong lang="pl">Ochrona danych osobowych i&nbsp;bezpieczeństwo informacji</strong>
@@ -657,8 +660,9 @@
                                     <span class="contact-row__value">Damian.Tomczyszyn@<wbr>outlook.my</span>
                                 </a>
                                 <button type="button" class="copy-btn" data-copy="Damian.Tomczyszyn@outlook.my"
-                                        aria-label="Kopiuj adres e-mail" data-label-pl="Kopiuj adres e-mail" data-label-en="Copy email address" hidden>
-                                    <svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg>
+                                        aria-label="Kopiuj adres e-mail" title="Kopiuj adres e-mail" data-label-pl="Kopiuj adres e-mail" data-label-en="Copy email address" hidden>
+                                    <svg class="icon icon-copy" aria-hidden="true"><use href="#i-copy"/></svg>
+                                    <svg class="icon icon-check" aria-hidden="true"><use href="#i-check"/></svg>
                                 </button>
                             </div>
                         </li>

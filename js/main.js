@@ -62,6 +62,7 @@
     // Attributes that can't be expressed with lang-paired elements.
     document.querySelectorAll("[data-label-pl]").forEach(function (el) {
       el.setAttribute("aria-label", el.getAttribute("data-label-" + lang));
+      if (el.hasAttribute("title") && !el.hasAttribute("data-set-lang")) el.setAttribute("title", el.getAttribute("data-label-" + lang));
     });
     document.querySelectorAll("[data-alt-pl]").forEach(function (el) {
       el.setAttribute("alt", el.getAttribute("data-alt-" + lang));
@@ -137,6 +138,11 @@
     nav.addEventListener("click", function (e) {
       if (e.target.closest("a")) setMenu(false);
     });
+    document.addEventListener("click", function (e) {
+      if (menuBtn.getAttribute("aria-expanded") === "true" && !nav.contains(e.target) && !menuBtn.contains(e.target)) {
+        setMenu(false);
+      }
+    });
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && menuBtn.getAttribute("aria-expanded") === "true") {
         setMenu(false);
@@ -178,8 +184,8 @@
   /* Copy e-mail ----------------------------------------------------------- */
   var status = document.getElementById("copy-status");
   var COPY_MSG = {
-    pl: { ok: "Skopiowano adres e-mail", fail: "Nie udało się skopiować – adres jest zaznaczony" },
-    en: { ok: "Email address copied", fail: "Couldn’t copy – the address is selected" },
+    pl: { ok: "Skopiowano adres e-mail", fail: "Nie udało się skopiować. Adres został zaznaczony – skopiuj go ręcznie." },
+    en: { ok: "Email address copied", fail: "Couldn’t copy. The address is now selected – copy it manually." },
   };
 
   document.querySelectorAll("[data-copy]").forEach(function (btn) {

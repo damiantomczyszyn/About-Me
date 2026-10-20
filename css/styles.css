@@ -420,6 +420,21 @@ p {
   display: none;
 }
 
+.menu-toggle[aria-expanded="true"] .icon-menu,
+.menu-toggle:not([aria-expanded="true"]) .icon-close {
+  display: none;
+}
+
+/* Language and theme switching need JS; without it the page is Polish and follows the system theme. */
+html:not(.js) .lang-switch,
+html:not(.js) .theme-toggle {
+  display: none;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
 /* Buttons & tags ---------------------------------------------------------- */
 .btn {
   display: inline-flex;
@@ -477,7 +492,7 @@ p {
   font-size: 0.75rem;
   font-weight: 500;
   line-height: 1.5;
-  white-space: nowrap;
+  max-width: 100%;
 }
 
 .tag-list {
@@ -1178,6 +1193,15 @@ a.contact-row:hover,
   color: var(--ok);
 }
 
+.copy-btn .icon-check,
+.copy-btn.is-done .icon-copy {
+  display: none;
+}
+
+.copy-btn.is-done .icon-check {
+  display: block;
+}
+
 /* Footer ------------------------------------------------------------------ */
 .site-footer {
   padding-block: 32px;
@@ -1314,7 +1338,7 @@ a.contact-row:hover,
   }
 
   .hero__name {
-    font-size: clamp(2.1rem, 9.5vw, 2.75rem);
+    font-size: clamp(1.85rem, 9.5vw, 2.75rem);
   }
 
   .hero__tagline {
